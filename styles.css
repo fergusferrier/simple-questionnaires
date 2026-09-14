@@ -56,8 +56,10 @@ h1 span { font-size: 17px; font-weight: 450; letter-spacing: 0; color: var(--mut
 .question-table .question-col { width: 52%; }
 .question-table.who .question-col { width: 38%; }
 .question-table thead { background: #f7f9fb; }
-.question-table thead th { font-size: 14px; font-weight: 550; color: var(--ink); line-height: 1.25; padding: 12px 6px; text-align: center; }
-.question-table .matrix-prompt { padding: 12px 20px; text-align: start; }
+.question-table thead th { position: relative; font-size: 14px; font-weight: 550; color: var(--ink); line-height: 1.25; padding: 12px 6px; text-align: center; }
+.question-table thead th::before { content: ''; position: absolute; inset: 0; border-top: 1px solid var(--line); pointer-events: none; }
+.question-table thead th:nth-child(2)::before { border-inline-start: 1px solid var(--line); }
+.question-table .matrix-prompt { padding: 12px 20px; text-align: start; background: white; }
 .matrix-prompt p { margin: 0; line-height: 1.45; }
 .question-table tbody tr { border-top: 1px solid #e6ebf0; }
 .question-table tbody th { font-weight: 450; text-align: start; padding: 10px 12px; padding-inline-start: 20px; font-size: 16px; line-height: 1.35; }
