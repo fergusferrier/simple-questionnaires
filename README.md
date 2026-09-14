@@ -1,5 +1,7 @@
 # Simple Questionnaires
 
+You're on GitHub, where we keep the source code and files used to build Simple Questionnaires. To answer the questionnaires and get your score, visit the website below.
+
 **[Complete a questionnaire on the website](https://fergusferrier.github.io/simple-questionnaires/)**
 
 Free questionnaires about depression symptoms, anxiety symptoms and well-being over the past two weeks. Answer the questions to see your score immediately. No account or download is needed.
@@ -34,4 +36,4 @@ Each questionnaire page links to its sources and scoring guidance. The [source a
 
 [Report an issue or suggest an improvement](https://github.com/fergusferrier/simple-questionnaires/issues/new). GitHub issues are public, so please leave out personal answers, results and other private information. The issue tracker is for website feedback, not personal health advice or urgent support.
 
-This GitHub page holds the files used to make the website. If you want to change the code or run your own copy, see the [development guide](DEVELOPING.md).
+If you want to change the code or run your own copy, see the [development guide](DEVELOPING.md).
