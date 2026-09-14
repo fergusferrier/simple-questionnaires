@@ -108,7 +108,6 @@
         "Aproape zilnic"
       ],
       "title": "Chestionar pentru depresie",
-      "about": "PHQ-9 măsoară simptomele depresive în ultimele două săptămâni.",
       "scoring": "Scorurile mai mari indică mai multe simptome.",
       "scoreAdvice": "Un scor de **10 sau mai mult** este un motiv pentru a discuta rezultatul cu un profesionist calificat.",
       "fullName": "PHQ-9 · Chestionar pentru depresie",
@@ -142,7 +141,6 @@
         "Aproape zilnic"
       ],
       "title": "Chestionar de anxietate",
-      "about": "GAD-7 măsoară simptomele de anxietate în ultimele două săptămâni.",
       "scoring": "Scorurile mai mari indică mai multe simptome.",
       "scoreAdvice": "Un scor de **10 sau mai mult** este un motiv pentru a discuta rezultatul cu un profesionist calificat.",
       "fullName": "GAD-7 · Chestionar de anxietate",
@@ -175,7 +173,6 @@
         "Viata mea de zi de zi a fost plina de lucruri care m-au interesat"
       ],
       "title": "Chestionar de bunăstare",
-      "about": "OMS-5 măsoară bunăstarea în ultimele două săptămâni.",
       "scoring": "Scoruri mai mari indică o bunăstare mai bună.",
       "scoreAdvice": "Un scor sub **50** sugerează o bunăstare slabă și este un motiv pentru a solicita o evaluare suplimentară.",
       "fullName": "WHO-5 · Chestionar de bunăstare",

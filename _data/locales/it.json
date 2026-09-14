@@ -108,7 +108,6 @@
         "Quasi ogni giorno"
       ],
       "title": "Questionario sulla depressione",
-      "about": "Il PHQ-9 misura i sintomi depressivi nelle ultime due settimane.",
       "scoring": "Punteggi più alti indicano più sintomi.",
       "scoreAdvice": "Un punteggio pari o superiore a **10** è un motivo per discutere il risultato con un professionista sanitario qualificato.",
       "fullName": "PHQ-9 · Questionario sulla depressione",
@@ -142,7 +141,6 @@
         "Quasi ogni giorno"
       ],
       "title": "Questionario sull’ansia",
-      "about": "Il GAD-7 misura i sintomi di ansia nelle ultime due settimane.",
       "scoring": "Punteggi più alti indicano più sintomi.",
       "scoreAdvice": "Un punteggio pari o superiore a **10** è un motivo per discutere il risultato con un professionista sanitario qualificato.",
       "fullName": "GAD-7 · Questionario sull’ansia",
@@ -175,7 +173,6 @@
         "Mai"
       ],
       "title": "Questionario sul benessere",
-      "about": "L'OMS-5 misura il benessere nelle ultime due settimane.",
       "scoring": "Punteggi più alti indicano un benessere migliore.",
       "scoreAdvice": "Un punteggio inferiore a **50** suggerisce uno scarso benessere ed è un motivo per richiedere un'ulteriore valutazione.",
       "fullName": "WHO-5 · Questionario sul benessere",

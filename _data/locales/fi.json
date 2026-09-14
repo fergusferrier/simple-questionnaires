@@ -108,7 +108,6 @@
         "Lähes joka päivä"
       ],
       "title": "Masennuskyselylomake",
-      "about": "PHQ-9 mittaa masennusoireita viimeisen kahden viikon ajalta.",
       "scoring": "Korkeammat pisteet osoittavat enemmän oireita.",
       "scoreAdvice": "Pistemäärä **10 tai enemmän** on syy keskustella tuloksesta pätevän terveydenhuollon ammattilaisen kanssa.",
       "fullName": "PHQ-9 · Masennuskyselylomake",
@@ -142,7 +141,6 @@
         "Lähes joka päivä"
       ],
       "title": "Ahdistuneisuuskyselylomake",
-      "about": "GAD-7 mittaa ahdistuneisuusoireita viimeisen kahden viikon ajalta.",
       "scoring": "Korkeammat pisteet osoittavat enemmän oireita.",
       "scoreAdvice": "Pistemäärä **10 tai enemmän** on syy keskustella tuloksesta pätevän terveydenhuollon ammattilaisen kanssa.",
       "fullName": "GAD-7 · Ahdistuneisuuskyselylomake",
@@ -175,7 +173,6 @@
         "en lainkaan"
       ],
       "title": "Hyvinvointikysely",
-      "about": "WHO-5 mittaa hyvinvointia viimeisen kahden viikon ajalta.",
       "scoring": "Korkeammat pisteet osoittavat parempaa hyvinvointia.",
       "scoreAdvice": "Alle **50** pistemäärä viittaa huonoon hyvinvointiin ja on syy hakea lisäarviointia.",
       "fullName": "WHO-5 · Hyvinvointikysely",

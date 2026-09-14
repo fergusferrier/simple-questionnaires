@@ -108,7 +108,6 @@
         "Bijna elke dag"
       ],
       "title": "Vragenlijst over depressie",
-      "about": "De PHQ-9 meet de depressieve symptomen van de afgelopen twee weken.",
       "scoring": "Hogere scores duiden op meer symptomen.",
       "scoreAdvice": "Een score van **10 of meer** is een reden om de uitslag met een gekwalificeerde zorgverlener te bespreken.",
       "fullName": "PHQ-9 · Vragenlijst over depressie",
@@ -142,7 +141,6 @@
         "Bijna elke dag"
       ],
       "title": "Angstvragenlijst",
-      "about": "De GAD-7 meet angstsymptomen over de afgelopen twee weken.",
       "scoring": "Hogere scores duiden op meer symptomen.",
       "scoreAdvice": "Een score van **10 of meer** is een reden om de uitslag met een gekwalificeerde zorgverlener te bespreken.",
       "fullName": "GAD-7 · Angstvragenlijst",
@@ -175,7 +173,6 @@
         "Helemaal niet"
       ],
       "title": "Vragenlijst over welzijn",
-      "about": "De WHO-5 meet het welzijn van de afgelopen twee weken.",
       "scoring": "Hogere scores duiden op een beter welzijn.",
       "scoreAdvice": "Een score onder **50** duidt op een slecht welzijn en is een reden om verder onderzoek te doen.",
       "fullName": "WHO-5 · Vragenlijst over welzijn",

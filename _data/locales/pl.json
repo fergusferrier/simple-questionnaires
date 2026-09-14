@@ -108,7 +108,6 @@
         "Niemal codziennie"
       ],
       "title": "Kwestionariusz depresji",
-      "about": "Skala PHQ-9 mierzy objawy depresji w ciągu ostatnich dwóch tygodni.",
       "scoring": "Wyższe wyniki wskazują na więcej objawów.",
       "scoreAdvice": "Wynik **10 lub więcej** jest powodem do omówienia wyniku z wykwalifikowanym pracownikiem służby zdrowia.",
       "fullName": "PHQ-9 · Kwestionariusz depresji",
@@ -142,7 +141,6 @@
         "Niemal codziennie"
       ],
       "title": "Kwestionariusz lęku",
-      "about": "GAD-7 mierzy objawy lękowe w ciągu ostatnich dwóch tygodni.",
       "scoring": "Wyższe wyniki wskazują na więcej objawów.",
       "scoreAdvice": "Wynik **10 lub więcej** jest powodem do omówienia wyniku z wykwalifikowanym pracownikiem służby zdrowia.",
       "fullName": "GAD-7 · Kwestionariusz lęku",
@@ -175,7 +173,6 @@
         "Nigdy"
       ],
       "title": "Kwestionariusz dobrego samopoczucia",
-      "about": "WHO-5 mierzy dobrostan w ciągu ostatnich dwóch tygodni.",
       "scoring": "Wyższe wyniki wskazują na lepsze samopoczucie.",
       "scoreAdvice": "Wynik poniżej **50** sugeruje złe samopoczucie i jest powodem do dalszej oceny.",
       "fullName": "WHO-5 · Kwestionariusz dobrego samopoczucia",

@@ -67,7 +67,6 @@
     <section class="work" aria-label="{{ t.questionnaireLabel | replace: name_token, q.name | escape }}">
       <div class="intro">
         <h1><bdi>{{ q.name }}</bdi><span>{{ text.title }}</span></h1>
-        <p class="about">{{ text.about | escape }}</p>
         {% if text.translationNotice %}<p class="about translation-notice">{{ text.translationNotice | escape }}</p>{% endif %}
       </div>
       <form id="questionnaire" autocomplete="off">

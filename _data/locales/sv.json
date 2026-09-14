@@ -108,7 +108,6 @@
         "Nästan varje dag"
       ],
       "title": "Depression frågeformulär",
-      "about": "PHQ-9 mäter depressiva symtom under de senaste två veckorna.",
       "scoring": "Högre poäng indikerar fler symtom.",
       "scoreAdvice": "En poäng på **10 eller mer** är en anledning att diskutera resultatet med en kvalificerad vårdpersonal.",
       "fullName": "PHQ-9 · Depression frågeformulär",
@@ -142,7 +141,6 @@
         "Nästan varje dag"
       ],
       "title": "Frågeformulär för ångest",
-      "about": "GAD-7 mäter ångestsymtom under de senaste två veckorna.",
       "scoring": "Högre poäng indikerar fler symtom.",
       "scoreAdvice": "En poäng på **10 eller mer** är en anledning att diskutera resultatet med en kvalificerad vårdpersonal.",
       "fullName": "GAD-7 · Frågeformulär för ångest",
@@ -175,7 +173,6 @@
         "Aldrig"
       ],
       "title": "Frågeformulär om välmående",
-      "about": "WHO-5 mäter välbefinnande under de senaste två veckorna.",
       "scoring": "Högre poäng indikerar bättre välbefinnande.",
       "scoreAdvice": "En poäng under **50** tyder på dåligt välbefinnande och är en anledning att söka ytterligare bedömning.",
       "fullName": "WHO-5 · Frågeformulär om välmående",

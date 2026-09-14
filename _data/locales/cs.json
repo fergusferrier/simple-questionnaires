@@ -108,7 +108,6 @@
         "Téměř každý den"
       ],
       "title": "Dotazník deprese",
-      "about": "PHQ-9 měří příznaky deprese za poslední dva týdny.",
       "scoring": "Vyšší skóre značí více příznaků.",
       "scoreAdvice": "Skóre **10 nebo více** je důvodem k diskusi o výsledku s kvalifikovaným zdravotníkem.",
       "fullName": "PHQ-9 · Dotazník deprese",
@@ -142,7 +141,6 @@
         "Téměř každý den"
       ],
       "title": "Úzkostný dotazník",
-      "about": "GAD-7 měří symptomy úzkosti za poslední dva týdny.",
       "scoring": "Vyšší skóre značí více příznaků.",
       "scoreAdvice": "Skóre **10 nebo více** je důvodem k diskusi o výsledku s kvalifikovaným zdravotníkem.",
       "fullName": "GAD-7 · Úzkostný dotazník",
@@ -175,7 +173,6 @@
         "nikdy"
       ],
       "title": "Dotazník pohody",
-      "about": "WHO-5 měří blahobyt za poslední dva týdny.",
       "scoring": "Vyšší skóre značí lepší pohodu.",
       "scoreAdvice": "Skóre pod **50** naznačuje špatnou pohodu a je důvodem k dalšímu posouzení.",
       "fullName": "WHO-5 · Dotazník pohody",

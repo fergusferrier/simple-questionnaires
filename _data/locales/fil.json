@@ -108,7 +108,6 @@
         "Halos araw-araw"
       ],
       "title": "Palatanungan sa depresyon",
-      "about": "Sinusukat ng PHQ-9 ang mga sintomas ng depresyon sa nakalipas na dalawang linggo.",
       "scoring": "Ang mas mataas na mga marka ay nagpapahiwatig ng higit pang mga sintomas.",
       "scoreAdvice": "Ang markang **10 o higit pa** ay isang dahilan upang talakayin ang resulta sa isang kwalipikadong propesyonal sa kalusugan.",
       "fullName": "PHQ-9 · Palatanungan sa depresyon",
@@ -142,7 +141,6 @@
         "Halos araw-araw"
       ],
       "title": "Palatanungan sa pagkabalisa",
-      "about": "Sinusukat ng GAD-7 ang mga sintomas ng pagkabalisa sa nakalipas na dalawang linggo.",
       "scoring": "Ang mas mataas na mga marka ay nagpapahiwatig ng higit pang mga sintomas.",
       "scoreAdvice": "Ang markang **10 o higit pa** ay isang dahilan upang talakayin ang resulta sa isang kwalipikadong propesyonal sa kalusugan.",
       "fullName": "GAD-7 · Palatanungan sa pagkabalisa",
@@ -175,7 +173,6 @@
         "Hindi nangyari"
       ],
       "title": "Palatanungan sa kagalingan",
-      "about": "Sinusukat ng WHO-5 ang kagalingan sa nakalipas na dalawang linggo.",
       "scoring": "Ang mas mataas na mga marka ay nagpapahiwatig ng mas mahusay na kagalingan.",
       "scoreAdvice": "Ang markang mababa sa **50** ay nagmumungkahi ng mahinang kagalingan at isang dahilan upang humingi ng karagdagang pagtatasa.",
       "fullName": "WHO-5 · Palatanungan sa kagalingan",

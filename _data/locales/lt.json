@@ -108,7 +108,6 @@
         "Beveik kiekvieną dieną"
       ],
       "title": "Depresijos klausimynas",
-      "about": "PHQ-9 matuoja depresijos simptomus per pastarąsias dvi savaites.",
       "scoring": "Didesni balai rodo daugiau simptomų.",
       "scoreAdvice": "**10 ar daugiau** balų yra priežastis aptarti rezultatą su kvalifikuotu sveikatos priežiūros specialistu.",
       "fullName": "PHQ-9 · Depresijos klausimynas",
@@ -142,7 +141,6 @@
         "Beveik kiekvieną dieną"
       ],
       "title": "Nerimo klausimynas",
-      "about": "GAD-7 matuoja nerimo simptomus per pastarąsias dvi savaites.",
       "scoring": "Didesni balai rodo daugiau simptomų.",
       "scoreAdvice": "**10 ar daugiau** balų yra priežastis aptarti rezultatą su kvalifikuotu sveikatos priežiūros specialistu.",
       "fullName": "GAD-7 · Nerimo klausimynas",
@@ -175,7 +173,6 @@
         "Niekada"
       ],
       "title": "Gerovės klausimynas",
-      "about": "PSO-5 įvertina gerovę per pastarąsias dvi savaites.",
       "scoring": "Didesni balai rodo geresnę savijautą.",
       "scoreAdvice": "Žemesnis nei **50** balas rodo prastą savijautą ir yra priežastis ieškoti tolesnio įvertinimo.",
       "fullName": "WHO-5 · Gerovės klausimynas",

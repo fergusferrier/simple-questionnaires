@@ -108,7 +108,6 @@
         "Skoro svaki dan"
       ],
       "title": "Upitnik o depresiji",
-      "about": "PHQ-9 mjeri simptome depresije tijekom posljednja dva tjedna.",
       "scoring": "Viši rezultati ukazuju na više simptoma.",
       "scoreAdvice": "Rezultat **10 ili više** razlog je za raspravu o rezultatu s kvalificiranim zdravstvenim stručnjakom.",
       "fullName": "PHQ-9 · Upitnik o depresiji",
@@ -142,7 +141,6 @@
         "Skoro svaki dan"
       ],
       "title": "Anksiozni upitnik",
-      "about": "GAD-7 mjeri simptome anksioznosti tijekom posljednja dva tjedna.",
       "scoring": "Viši rezultati ukazuju na više simptoma.",
       "scoreAdvice": "Rezultat **10 ili više** razlog je za raspravu o rezultatu s kvalificiranim zdravstvenim stručnjakom.",
       "fullName": "GAD-7 · Anksiozni upitnik",

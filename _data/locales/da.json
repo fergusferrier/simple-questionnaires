@@ -108,7 +108,6 @@
         "Næsten hver dag"
       ],
       "title": "Depressionsspørgeskema",
-      "about": "PHQ-9 måler depressive symptomer i løbet af de sidste to uger.",
       "scoring": "Højere score indikerer flere symptomer.",
       "scoreAdvice": "En score på **10 eller mere** er en grund til at diskutere resultatet med en kvalificeret sundhedsperson.",
       "fullName": "PHQ-9 · Depressionsspørgeskema",
@@ -142,7 +141,6 @@
         "Næsten hver dag"
       ],
       "title": "Angst spørgeskema",
-      "about": "GAD-7 måler angstsymptomer over de sidste to uger.",
       "scoring": "Højere score indikerer flere symptomer.",
       "scoreAdvice": "En score på **10 eller mere** er en grund til at diskutere resultatet med en kvalificeret sundhedsperson.",
       "fullName": "GAD-7 · Angst spørgeskema",
@@ -175,7 +173,6 @@
         "På intet tidspunkt"
       ],
       "title": "Trivselsspørgeskema",
-      "about": "WHO-5 måler velvære over de seneste to uger.",
       "scoring": "Højere score indikerer bedre velvære.",
       "scoreAdvice": "En score under **50** antyder dårligt velbefindende og er en grund til at søge yderligere vurdering.",
       "fullName": "WHO-5 · Trivselsspørgeskema",

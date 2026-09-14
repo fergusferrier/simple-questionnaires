@@ -108,7 +108,6 @@
         "Majdnem minden nap"
       ],
       "title": "Depresszió kérdőív",
-      "about": "A PHQ-9 a depressziós tüneteket méri az elmúlt két hétben.",
       "scoring": "A magasabb pontszámok több tünetet jeleznek.",
       "scoreAdvice": "A **10 vagy több** pontszám ok arra, hogy az eredményt szakképzett egészségügyi szakemberrel megbeszéljük.",
       "fullName": "PHQ-9 · Depresszió kérdőív",
@@ -142,7 +141,6 @@
         "Csaknem minden nap"
       ],
       "title": "Szorongás kérdőív",
-      "about": "A GAD-7 méri a szorongásos tüneteket az elmúlt két hétben.",
       "scoring": "A magasabb pontszámok több tünetet jeleznek.",
       "scoreAdvice": "A **10 vagy több** pontszám ok arra, hogy az eredményt egy képzett egészségügyi szakemberrel megbeszéljük.",
       "fullName": "GAD-7 · Szorongás kérdőív",
@@ -176,7 +174,6 @@
       ],
       "adaptationNote": "A nyomtatott forrás elírásait javítottuk: „magma” helyett „magam” (2. és 3. állítás), „dogokkal” helyett „dolgokkal” (5. állítás).",
       "title": "Jó közérzet kérdőív",
-      "about": "A WHO-5 a jólétet méri az elmúlt két hétben.",
       "scoring": "A magasabb pontszámok jobb közérzetet jeleznek.",
       "scoreAdvice": "Az **50** alatti pontszám rossz közérzetre utal, és okot ad további értékelésre.",
       "fullName": "WHO-5 · Jó közérzet kérdőív",

@@ -108,7 +108,6 @@
         "Takmer každý deň"
       ],
       "title": "Dotazník depresie",
-      "about": "PHQ-9 meria symptómy depresie za posledné dva týždne.",
       "scoring": "Vyššie skóre naznačuje viac symptómov.",
       "scoreAdvice": "Skóre **10 alebo viac** je dôvodom na prediskutovanie výsledku s kvalifikovaným zdravotníckym pracovníkom.",
       "fullName": "PHQ-9 · Dotazník depresie",
@@ -142,7 +141,6 @@
         "Takmer každý deň"
       ],
       "title": "Dotazník úzkosti",
-      "about": "GAD-7 meria symptómy úzkosti za posledné dva týždne.",
       "scoring": "Vyššie skóre naznačuje viac symptómov.",
       "scoreAdvice": "Skóre **10 alebo viac** je dôvodom na prediskutovanie výsledku s kvalifikovaným zdravotníckym pracovníkom.",
       "fullName": "GAD-7 · Dotazník úzkosti",

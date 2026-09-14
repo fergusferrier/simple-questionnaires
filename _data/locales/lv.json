@@ -108,7 +108,6 @@
         "Gandrīz katru dienu"
       ],
       "title": "Depresijas aptauja",
-      "about": "PHQ-9 mēra depresijas simptomus pēdējo divu nedēļu laikā.",
       "scoring": "Augstāki rādītāji norāda uz vairāk simptomu.",
       "scoreAdvice": "**10 vai vairāk** rezultāts ir iemesls, lai apspriestu rezultātu ar kvalificētu veselības speciālistu.",
       "fullName": "PHQ-9 · Depresijas aptauja",
@@ -142,7 +141,6 @@
         "Gandrīz katru dienu"
       ],
       "title": "Anketa par trauksmi",
-      "about": "GAD-7 mēra trauksmes simptomus pēdējo divu nedēļu laikā.",
       "scoring": "Augstāki rādītāji norāda uz vairāk simptomu.",
       "scoreAdvice": "**10 vai vairāk** rezultāts ir iemesls, lai apspriestu rezultātu ar kvalificētu veselības speciālistu.",
       "fullName": "GAD-7 · Anketa par trauksmi",

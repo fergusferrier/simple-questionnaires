@@ -108,7 +108,6 @@
         "Quase todos os dias"
       ],
       "title": "Questionário de depressão",
-      "about": "O PHQ-9 mede os sintomas depressivos nas últimas duas semanas.",
       "scoring": "Pontuações mais altas indicam mais sintomas.",
       "scoreAdvice": "Uma pontuação de **10 ou mais** é um motivo para discutir o resultado com um profissional de saúde qualificado.",
       "fullName": "PHQ-9 · Questionário de depressão",
@@ -142,7 +141,6 @@
         "Quase todos os dias"
       ],
       "title": "Questionário de ansiedade",
-      "about": "O GAD-7 mede os sintomas de ansiedade nas últimas duas semanas.",
       "scoring": "Pontuações mais altas indicam mais sintomas.",
       "scoreAdvice": "Uma pontuação de **10 ou mais** é um motivo para discutir o resultado com um profissional de saúde qualificado.",
       "fullName": "GAD-7 · Questionário de ansiedade",

@@ -108,7 +108,6 @@
         "Hemen hemen her gün"
       ],
       "title": "Depresyon anketi",
-      "about": "PHQ-9 son iki haftadaki depresif belirtileri ölçer.",
       "scoring": "Yüksek puanlar daha fazla semptomu gösterir.",
       "scoreAdvice": "**10 veya daha fazla** puan, sonucu nitelikli bir sağlık uzmanıyla tartışmak için bir nedendir.",
       "fullName": "PHQ-9 · Depresyon anketi",
@@ -142,7 +141,6 @@
         "Hemen hemen her gün"
       ],
       "title": "Anksiyete anketi",
-      "about": "GAD-7 son iki haftadaki anksiyete belirtilerini ölçer.",
       "scoring": "Yüksek puanlar daha fazla semptomu gösterir.",
       "scoreAdvice": "**10 veya daha fazla** puan, sonucu nitelikli bir sağlık uzmanıyla tartışmak için bir nedendir.",
       "fullName": "GAD-7 · Anksiyete anketi",
@@ -175,7 +173,6 @@
         "Hiçbir zaman"
       ],
       "title": "İyilik anketi",
-      "about": "WHO-5, son iki haftadaki refahı ölçer.",
       "scoring": "Daha yüksek puanlar daha iyi refahı gösterir.",
       "scoreAdvice": "**50**'nin altındaki bir puan, sağlık durumunun kötü olduğunu gösterir ve daha ileri değerlendirme yapılması için bir nedendir.",
       "fullName": "WHO-5 · İyilik anketi",

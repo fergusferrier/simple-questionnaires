@@ -108,7 +108,6 @@
         "Nesten hver dag"
       ],
       "title": "Depresjonsspørreskjema",
-      "about": "PHQ-9 måler depressive symptomer de siste to ukene.",
       "scoring": "Høyere skår indikerer flere symptomer.",
       "scoreAdvice": "En poengsum på **10 eller mer** er en grunn til å diskutere resultatet med en kvalifisert helsepersonell.",
       "fullName": "PHQ-9 · Depresjonsspørreskjema",
@@ -142,7 +141,6 @@
         "Nesten hver dag"
       ],
       "title": "Angst spørreskjema",
-      "about": "GAD-7 måler angstsymptomer de siste to ukene.",
       "scoring": "Høyere skår indikerer flere symptomer.",
       "scoreAdvice": "En poengsum på **10 eller mer** er en grunn til å diskutere resultatet med en kvalifisert helsepersonell.",
       "fullName": "GAD-7 · Angst spørreskjema",
@@ -175,7 +173,6 @@
         "følt at mitt daglige liv har vært fylt av ting som interesserer meg"
       ],
       "title": "Velvære spørreskjema",
-      "about": "WHO-5 måler velvære de siste to ukene.",
       "scoring": "Høyere skår indikerer bedre velvære.",
       "scoreAdvice": "En skåre under **50** antyder dårlig velvære og er en grunn til å søke ytterligere vurdering.",
       "fullName": "WHO-5 · Velvære spørreskjema",
