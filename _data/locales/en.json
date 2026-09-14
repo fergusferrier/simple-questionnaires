@@ -112,7 +112,7 @@
       "source": "https://med.stanford.edu/content/dam/sm/ppc/documents/DBP/PHQ-9_bilingual.pdf",
       "sourceLabel": "English questionnaire PDF, hosted by Stanford",
       "about": "The PHQ-9 measures depressive symptoms over the past two weeks.",
-      "scoring": "Higher scores indicate more symptoms.",
+      "scoring": "Higher scores indicate more reported symptoms of depression.",
       "scoreAdvice": "A score of **10 or more** is a reason to discuss the result with a qualified health professional.",
       "bandLabels": [
         "Minimal",
@@ -145,7 +145,7 @@
       "source": "https://aims.uw.edu/wordpress/wp-content/uploads/2023/06/GAD-7_English_0.pdf",
       "sourceLabel": "English questionnaire PDF, hosted by the University of Washington",
       "about": "The GAD-7 measures anxiety symptoms over the past two weeks.",
-      "scoring": "Higher scores indicate more symptoms.",
+      "scoring": "Higher scores indicate more reported symptoms of anxiety.",
       "scoreAdvice": "A score of **10 or more** is a reason to discuss the result with a qualified health professional.",
       "bandLabels": [
         "Minimal",

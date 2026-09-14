@@ -50,7 +50,8 @@ h1 span { font-size: 17px; font-weight: 450; letter-spacing: 0; color: var(--mut
 .instructions { padding: 16px 20px; border-bottom: 1px solid var(--line); }
 .instructions p { margin: 0; line-height: 1.45; }
 @media screen {
-  .instructions { position: sticky; top: 0; z-index: 5; background: white; }
+  .instructions { background: white; }
+  .sticky-context .instructions { position: sticky; top: 0; z-index: 5; }
 }
 .question-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
 .question-table .question-col { width: 52%; }
@@ -83,7 +84,7 @@ h1 span { font-size: 17px; font-weight: 450; letter-spacing: 0; color: var(--mut
 @media screen and (min-width: 640px) {
   .intro { padding-bottom: 16px; }
   .instructions { display: none; }
-  .question-table thead { position: sticky; top: 0; z-index: 4; box-shadow: 0 1px 0 var(--line); }
+  .sticky-context .question-table thead { position: sticky; top: 0; z-index: 4; box-shadow: 0 1px 0 var(--line); }
   .question-table tbody tr:has(.choice:hover, input:focus-visible) > * {
     background: #f4f7fb;
   }

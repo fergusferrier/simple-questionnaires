@@ -240,11 +240,24 @@ function formatResult(id, values, date) {
   function resultText() {
     return formatResult(instrument, answers(), dateFormat.format(new Date(completedAt)));
   }
-  // Sticky prompts and headings must not cover an answer reached with the keyboard.
+  // Keep context visible only when the form needs scrolling and leaves room to answer.
   const prompt = form.querySelector('.instructions');
   const matrixHeading = form.querySelector('thead');
+  function updateStickyContext() {
+    const viewportHeight = window.visualViewport?.height ?? window.innerHeight;
+    const headingHeight = Math.max(prompt.offsetHeight, matrixHeading.offsetHeight);
+    form.classList.toggle('sticky-context', viewportHeight >= 480
+      && headingHeight <= viewportHeight / 4
+      && form.offsetHeight > viewportHeight - 32);
+  }
+  const contextObserver = new ResizeObserver(updateStickyContext);
+  [form, prompt, matrixHeading].forEach(element => contextObserver.observe(element));
+  window.addEventListener('resize', updateStickyContext);
+  window.visualViewport?.addEventListener('resize', updateStickyContext);
+  updateStickyContext();
+  // Sticky prompts and headings must not cover an answer reached with the keyboard.
   form.addEventListener('focusin', event => {
-    if (!event.target.matches('input[type="radio"]')) return;
+    if (!form.classList.contains('sticky-context') || !event.target.matches('input[type="radio"]')) return;
     const answerTop = event.target.getBoundingClientRect().top;
     const headingBottom = Math.max(prompt.getBoundingClientRect().bottom, matrixHeading.getBoundingClientRect().bottom);
     if (answerTop < headingBottom + 8) event.target.scrollIntoView({ block: 'center' });
