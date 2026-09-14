@@ -104,7 +104,7 @@ h1 span { font-size: 1.0625rem; font-weight: 450; letter-spacing: 0; color: var(
 }
 
 /* Result and actions. */
-.result { border-top: 1px solid var(--line); padding: 16px 20px; background: var(--pale); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+.result { border-top: 1px solid var(--line); padding: 16px 20px; background: white; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
 .result-copy { flex: 1; min-width: 0; }
 .result-line { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
 .result-title { font-size: 1.125rem; font-weight: 650; }
@@ -139,7 +139,7 @@ h1 span { font-size: 1.0625rem; font-weight: 450; letter-spacing: 0; color: var(
 .toggle input { accent-color: var(--blue); width: 18px; height: 18px; margin: 0; }
 .empty { margin: 0; color: var(--muted); font-size: 0.9375rem; }
 .history-saving { padding-top: 8px; }
-.history-saving:has(.empty:not([hidden])) { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 20px 14px 12px; border: 1px dashed #aebdcb; border-radius: 8px; }
+.history-saving:has(.empty:not([hidden])) { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 20px 14px 12px; border: 1px dashed #aebdcb; border-radius: 8px; background: white; }
 .history-table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; background: white; border: 1px solid var(--line); }
 .history-table th { font-weight: 550; text-align: start; padding: 10px 12px; color: var(--muted); border-bottom: 1px solid var(--line); }
 .history-table td { padding: 6px 12px; border-bottom: 1px solid #e7edf2; font-variant-numeric: tabular-nums; }
