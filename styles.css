@@ -46,7 +46,7 @@ h1 span { font-size: 17px; font-weight: 450; letter-spacing: 0; color: var(--mut
 .benefits li + li { border-inline-start: 1px solid var(--line); }
 
 /* Wide layout: question rows and a matrix of answer buttons. */
-.work { margin-top: 24px; background: white; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.work { margin-top: 24px; background: white; border: 1px solid var(--line); border-radius: 10px; overflow: clip; }
 .instructions { padding: 16px 20px; border-bottom: 1px solid var(--line); }
 .instructions p { margin: 0; line-height: 1.45; }
 .question-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
@@ -72,17 +72,18 @@ h1 span { font-size: 17px; font-weight: 450; letter-spacing: 0; color: var(--mut
 .choice:hover .choice-face { border-color: var(--blue); }
 .choice:has(input:checked), .choice:has(input:focus-visible) { z-index: 3; }
 
-/* Matrix guides follow the answer under the pointer or keyboard focus. */
+/* Matrix headers stay visible; guides follow the pointer or keyboard focus. */
 @media screen and (min-width: 640px) {
+  .question-table thead { position: sticky; top: 0; z-index: 4; box-shadow: 0 1px 0 var(--line); }
   .question-table tbody tr:has(.choice:hover, input:focus-visible) > * {
-    background: #e4edf7;
+    background: #f4f7fb;
   }
-  .question-table:has(td:nth-child(2) .choice:hover, td:nth-child(2) input:focus-visible) tr > :nth-child(2),
-  .question-table:has(td:nth-child(3) .choice:hover, td:nth-child(3) input:focus-visible) tr > :nth-child(3),
-  .question-table:has(td:nth-child(4) .choice:hover, td:nth-child(4) input:focus-visible) tr > :nth-child(4),
-  .question-table:has(td:nth-child(5) .choice:hover, td:nth-child(5) input:focus-visible) tr > :nth-child(5),
-  .question-table:has(td:nth-child(6) .choice:hover, td:nth-child(6) input:focus-visible) tr > :nth-child(6),
-  .question-table:has(td:nth-child(7) .choice:hover, td:nth-child(7) input:focus-visible) tr > :nth-child(7) {
+  .question-table:has(td:nth-child(2) .choice:hover, td:nth-child(2) input:focus-visible) thead tr > :nth-child(2),
+  .question-table:has(td:nth-child(3) .choice:hover, td:nth-child(3) input:focus-visible) thead tr > :nth-child(3),
+  .question-table:has(td:nth-child(4) .choice:hover, td:nth-child(4) input:focus-visible) thead tr > :nth-child(4),
+  .question-table:has(td:nth-child(5) .choice:hover, td:nth-child(5) input:focus-visible) thead tr > :nth-child(5),
+  .question-table:has(td:nth-child(6) .choice:hover, td:nth-child(6) input:focus-visible) thead tr > :nth-child(6),
+  .question-table:has(td:nth-child(7) .choice:hover, td:nth-child(7) input:focus-visible) thead tr > :nth-child(7) {
     background: #e4edf7;
   }
 }
