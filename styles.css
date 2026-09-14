@@ -51,7 +51,7 @@ h1 span { font-size: 17px; font-weight: 450; letter-spacing: 0; color: var(--mut
 .instructions p { margin: 0; line-height: 1.45; }
 @media screen {
   .instructions { background: white; }
-  .sticky-context .instructions { position: sticky; top: 0; z-index: 5; }
+  .instructions { position: sticky; top: 0; z-index: 5; }
 }
 .question-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
 .question-table .question-col { width: 52%; }
@@ -84,7 +84,7 @@ h1 span { font-size: 17px; font-weight: 450; letter-spacing: 0; color: var(--mut
 @media screen and (min-width: 640px) {
   .intro { padding-bottom: 16px; }
   .instructions { display: none; }
-  .sticky-context .question-table thead { position: sticky; top: 0; z-index: 4; box-shadow: 0 1px 0 var(--line); }
+  .question-table thead { position: sticky; top: 0; z-index: 4; box-shadow: 0 1px 0 var(--line); }
   .question-table tbody tr:has(.choice:hover, input:focus-visible) > * {
     background: #f4f7fb;
   }
@@ -96,6 +96,11 @@ h1 span { font-size: 17px; font-weight: 450; letter-spacing: 0; color: var(--mut
   .question-table:has(td:nth-child(7) .choice:hover, td:nth-child(7) input:focus-visible) thead tr > :nth-child(7) {
     background: #e4edf7;
   }
+}
+
+/* Leave room for answers on short or heavily zoomed viewports, at every width. */
+@media screen and (max-height: 399px) {
+  .instructions, .question-table thead { position: static; }
 }
 
 /* Result and actions. */
