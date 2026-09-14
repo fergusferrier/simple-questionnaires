@@ -92,7 +92,8 @@
         <p class="result-note">This site is not monitored and cannot contact help for you.</p>
       </aside>
       <div class="result" id="result">
-        <div class="result-copy" role="status" aria-label="Result" aria-atomic="true">
+        <p id="result-announcement" class="sr-only" role="status" aria-atomic="true"></p>
+        <div class="result-copy">
           <div class="result-line">
             <strong class="result-title">Result:</strong>
             <span class="result-prompt" id="result-prompt">Answer all questions to see your result.</span>
@@ -118,6 +119,7 @@
           <button type="button" class="button subtle" id="new-result"><span aria-hidden="true">↻</span> Start again</button>
         </div>
         <p id="save-status" class="notice" role="status" aria-atomic="true"></p>
+        <div id="copy-fallback" hidden><label for="copy-text">Copy your result from here</label><textarea id="copy-text" rows="5" readonly></textarea></div>
       </div>
     </section>
 
@@ -140,7 +142,6 @@
       </div>
       <div class="history-tools"><button type="button" class="button danger" id="delete-all" hidden>Delete all saved results</button></div>
       <p id="history-status" class="notice" role="status" aria-atomic="true"></p>
-      <div id="copy-fallback" hidden><label for="copy-text">Copy your result from here</label><textarea id="copy-text" rows="5" readonly></textarea></div>
     </section>
     <div class="history-privacy">
       <p>History - if enabled - is stored in this browser only, and is not synced across browsers or devices or sent over a network. Someone using your browser profile can see it. Using the “Delete all saved results” button, clearing browser data or ending a private browsing session can erase it.</p>

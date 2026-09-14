@@ -121,6 +121,7 @@ h1 span { font-size: 17px; font-weight: 450; letter-spacing: 0; color: var(--mut
 .notice:empty { display: none; }
 #history-status { margin-top: 12px; }
 #copy-text { width: 100%; }
+#copy-fallback { flex-basis: 100%; width: 100%; }
 
 /* Supporting information and destructive confirmation. */
 .details-stack { margin: 24px 0; }
@@ -205,6 +206,7 @@ dialog .actions { justify-content: flex-end; }
 }
 
 @media (max-width: 390px) {
+  .topbar > .wrap { flex-wrap: wrap; justify-content: center; padding-top: 10px; }
   .brandmark { display: none; }
   nav { gap: 0; }
   nav a { padding: 12px 7px; }
@@ -218,7 +220,8 @@ dialog .actions { justify-content: flex-end; }
 @media print {
   body { background: white; }
   .wrap { max-width: none; padding: 0; }
-  .topbar, .skip, .result-privacy, .history, .history-privacy, .details-stack, footer, .actions, .benefits, .notice { display: none !important; }
+  .topbar, .skip, .result-privacy, .history, .history-privacy, .details-stack, .actions, .benefits, .notice, .support-button, #copy-fallback { display: none !important; }
+  .disclaimer-panel { background: white; border: 0; border-top: 1px solid var(--line); border-radius: 0; margin: 12px 0 0; padding: 12px 0 0; break-inside: avoid; }
   .intro { padding-top: 0; }
   .work { border: 0; margin-top: 0; }
   .question-table tbody tr, .support, .result { break-inside: avoid; }

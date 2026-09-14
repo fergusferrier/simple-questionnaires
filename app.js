@@ -111,6 +111,11 @@ function formatResult(id, values, date) {
   function renderResult(shouldSave = true) {
     const values = answers();
     current = scoreAnswers(instrument, values);
+    $('copy-fallback').hidden = true;
+    $('copy-text').value = '';
+    $('result-announcement').textContent = current
+      ? `Result: ${current.score} out of ${q.max}${current.label ? `, ${current.label}` : ''}.`
+      : 'Answer all questions to see your result.';
     $('result-prompt').hidden = !!current;
     $('result-score').hidden = !current;
     $('result-details').hidden = !current;
@@ -198,6 +203,7 @@ function formatResult(id, values, date) {
     pendingDelete = null;
     $('delete-dialog').close();
     renderHistory();
+    $('saving-toggle').focus();
   }
   function resultText() {
     return formatResult(instrument, answers(), dateFormat.format(new Date(completedAt)));
