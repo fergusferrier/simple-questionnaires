@@ -99,7 +99,7 @@ h1 span { font-size: 17px; font-weight: 450; letter-spacing: 0; color: var(--mut
 }
 
 /* Leave room for answers on short or heavily zoomed viewports, at every width. */
-@media screen and (max-height: 399px) {
+@media screen and (max-height: 299px) {
   .instructions, .question-table thead { position: static; }
 }
 
