@@ -1,0 +1,15 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-heading">
+      <a class="brand" href="{{ '/' | relative_url }}"><span class="brandmark" aria-hidden="true">✓</span>{{ site.title }}</a>
+      <div class="footer-links">
+        <a href="https://github.com/fergusferrier/simple-questionnaires" rel="noreferrer">{{ t.github | escape }}</a>
+        <a href="https://github.com/fergusferrier/simple-questionnaires/issues/new" rel="noreferrer">{{ t.issue | escape }}</a>
+      </div>
+    </div>
+    <div class="footer-disclaimer" aria-label="{{ t.aboutResults | escape }}">
+      <p class="disclaimer"><span aria-hidden="true">⚠︎</span> {{ t.disclaimer | escape }}</p>
+      <a class="button support-button" href="{{ support_url }}" rel="noreferrer">{{ t.findSupport | escape }} <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,14 @@
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="{{ '/' | relative_url }}"><span class="brandmark" aria-hidden="true">✓</span>{{ site.title }}</a>
+    <nav aria-label="{{ t.navigation | escape }}">
+      {% for entry in site.data.questionnaires %}
+      {% assign instrument_key = entry[0] %}
+      {% assign translated_entry = locale.questionnaires[instrument_key] %}
+      {% assign route = prefix | append: '/' | append: entry[0] | append: '.html' %}
+      {% unless translated_entry %}{% assign route = '/' | append: entry[0] | append: '.html' %}{% endunless %}
+      <a href="{{ route | relative_url }}"{% if page.questionnaire == entry[0] %} aria-current="page"{% endif %}><bdi>{{ entry[1].name }}</bdi>{% unless translated_entry %} <small lang="en">(English)</small>{% endunless %}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>

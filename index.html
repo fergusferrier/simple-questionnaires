@@ -1,13 +1,57 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0;url=phq-9.html">
-  <title>Simple Questionnaires</title>
-</head>
-<body>
-  <a href="phq-9.html">PHQ-9</a>
-  <a href="gad-7.html">GAD-7</a>
-  <a href="who-5.html">WHO-5</a>
-</body>
-</html>
+---
+layout: home
+description: Free PHQ-9, GAD-7 and WHO-5 questionnaires. Clear layouts, instant scores, no account or tracking, and optional history stored only in your browser.
+cards:
+  - id: phq-9
+    topic: Depression symptoms
+    description: Reflect on your mood, interest, energy and other symptoms over the past two weeks.
+  - id: gad-7
+    topic: Anxiety symptoms
+    description: Reflect on worry, tension and other symptoms over the past two weeks.
+  - id: who-5
+    topic: Well-being
+    description: Reflect on how you have been feeling in everyday life over the past two weeks.
+features:
+  - title: All questions on one page
+    description: A clear layout, with no steps to click through. Answer at your own pace.
+  - title: Instant score and explanation
+    description: See your result as soon as you finish. Copy or print it for later.
+  - title: Free. No account. No tracking.
+    description: Open a questionnaire and start answering.
+  - title: Your answers stay private
+    description: Answers, results and scoring stay in your browser and are never sent to us.
+  - title: Optional history on your device
+    description: Choose to save your scores over time. Delete them whenever you like.
+  - title: Made for different ways of reading
+    description: A layout that adapts to your screen, text that scales, and keyboard controls.
+---
+<div class="home-intro">
+  <h1>Mental health questionnaires, made simple.</h1>
+  <p>Check in on depression symptoms, anxiety symptoms or well-being. Clear questions, an instant result, and no account to create.</p>
+</div>
+
+<section class="questionnaire-picker" aria-labelledby="choose-title">
+  <h2 id="choose-title">Choose a questionnaire</h2>
+  <div class="questionnaire-cards">
+    {% for card in page.cards %}
+    {% assign questionnaire = site.data.questionnaires[card.id] %}
+    <a class="questionnaire-card" href="{{ '/' | append: card.id | append: '.html' | relative_url }}">
+      <h3>{{ questionnaire.name }}</h3>
+      <p class="card-topic">{{ card.topic }}</p>
+      <p class="card-description">{{ card.description }}</p>
+      <div class="card-action"><span>{{ questionnaire.count }} questions</span><span>Start <span aria-hidden="true">→</span></span></div>
+    </a>
+    {% endfor %}
+  </div>
+  <p class="language-note">Available in many languages. Open a questionnaire and choose <strong>Languages</strong> near the bottom; availability varies by questionnaire.</p>
+</section>
+
+<section class="home-features" aria-labelledby="features-title">
+  <h2 id="features-title">Simple by design</h2>
+  <ul>
+    {% for feature in page.features %}
+    <li><span class="feature-tick" aria-hidden="true">✓</span><div><h3>{{ feature.title }}</h3><p>{{ feature.description }}</p></div></li>
+    {% endfor %}
+  </ul>
+  <p class="source-note">Each questionnaire includes its sources and scoring guidance.</p>
+</section>

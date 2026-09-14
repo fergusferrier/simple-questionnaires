@@ -34,30 +34,7 @@
 <body data-instrument="{{ page.questionnaire }}">
   <noscript><p class="wrap">{{ t.noScript | escape }}</p></noscript>
   <a class="skip" href="#questionnaire">{{ t.skip | escape }}</a>
-  <header class="topbar">
-    <div class="wrap">
-      {% assign first_instrument = locale.questionnaires | first %}
-      {% assign home_route = prefix | append: '/' | append: first_instrument[0] | append: '.html' %}
-      <a class="brand" href="{{ home_route | relative_url }}"><span class="brandmark" aria-hidden="true">✓</span>{{ site.title }}</a>
-      <nav aria-label="{{ t.navigation | escape }}">
-        {% for entry in site.data.questionnaires %}
-        {% assign instrument_key = entry[0] %}
-        {% assign translated_entry = locale.questionnaires[instrument_key] %}
-        {% assign route = prefix | append: '/' | append: entry[0] | append: '.html' %}
-        {% unless translated_entry %}{% assign route = '/' | append: entry[0] | append: '.html' %}{% endunless %}
-        <a href="{{ route | relative_url }}"{% if page.questionnaire == entry[0] %} aria-current="page"{% endif %}><bdi>{{ entry[1].name }}</bdi>{% unless translated_entry %} <small lang="en">(English)</small>{% endunless %}</a>
-        {% endfor %}
-      </nav>
-    </div>
-    <div class="benefits">
-      <ul class="wrap" aria-label="{{ t.benefitsLabel | escape }}">
-        <li>{{ t.benefitScore | escape }}</li>
-        <li>{{ t.benefitAccount | escape }}</li>
-        <li>{{ t.benefitTracking | escape }}</li>
-        <li>{{ t.benefitSave | escape }}</li>
-      </ul>
-    </div>
-  </header>
+  {% include site-header.html %}
   <main class="wrap">
     <aside id="language-suggestion" class="language-suggestion" hidden>
       <span id="language-suggestion-text"></span>
@@ -173,11 +150,6 @@
     </div>
 
     <div class="details-stack">
-      <section aria-labelledby="design-title">
-        <h2 id="design-title">{{ t.aboutTitle | escape }}</h2>
-        <p>{{ t.aboutText | escape }}</p>
-        <p><a href="https://github.com/fergusferrier/simple-questionnaires" rel="noreferrer">{{ t.github | escape }}</a> · <a href="https://github.com/fergusferrier/simple-questionnaires/issues/new" rel="noreferrer">{{ t.issue | escape }}</a></p>
-      </section>
       <section aria-labelledby="sources-title">
         <h2 id="sources-title">{{ t.sources | escape }}</h2>
         <p><a href="{{ text.source }}" rel="noreferrer">{{ text.sourceLabel | escape }}</a>{% unless text.source == q.guidance %} · <a href="{{ q.guidance }}" rel="noreferrer">{{ t.guidance | escape }}</a>{% endunless %}{% unless page.questionnaire == 'who-5' %} · <a href="https://www.phqscreeners.com/" rel="noreferrer">PHQ Screeners</a>{% endunless %}</p>
@@ -205,11 +177,8 @@
         {% endfor %}
       </details>
     </div>
-    <footer class="disclaimer-panel" aria-label="{{ t.aboutResults | escape }}">
-      <p class="disclaimer"><span aria-hidden="true">⚠️</span> {{ t.disclaimer | escape }}</p>
-      <a class="button support-button" href="{{ support_url }}" rel="noreferrer">{{ t.findSupport | escape }} <span aria-hidden="true">→</span></a>
-    </footer>
   </main>
+  {% include site-footer.html %}
   <dialog id="delete-dialog" aria-labelledby="delete-title" aria-describedby="delete-description">
     <h2 id="delete-title">{{ t.deleteTitle | escape }}</h2>
     <p id="delete-description"></p>

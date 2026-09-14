@@ -82,10 +82,21 @@ test('language preferences honour priority, regional variants and unavailable tr
   assert.equal(preferredLanguage(['tl-PH'], ['en', 'fil']), 'fil');
   assert.equal(preferredLanguage(['zh-TW'], ['en', 'zh', 'zh-Hant']), 'zh-Hant');
 });
-test('the sitemap lists only published questionnaire pages', () => {
+test('the home page offers all questionnaires without a redirect or JavaScript', () => {
+  const html = fs.readFileSync(path.join(site, 'index.html'), 'utf8');
+  assert.ok(!/http-equiv="refresh"|<script\b/.test(html));
+  const cards = [...html.matchAll(/<a class="questionnaire-card" href="([^"]+)"/g)].map(match => match[1]);
+  assert.equal(cards.length, 3);
+  for (const id of Object.keys(locales.en.questionnaires)) assert.ok(cards.some(url => url.endsWith(`/${id}.html`)));
+  assert.ok(html.indexOf('<footer class="site-footer">') > html.indexOf('</main>'));
+});
+test('the sitemap lists the home page and published questionnaire pages', () => {
   const sitemap = fs.readFileSync(path.join(site, 'sitemap.xml'), 'utf8');
   const expected = Object.values(locales).reduce((count, locale) => count + Object.keys(locale.questionnaires).length, 0);
-  assert.equal((sitemap.match(/<loc>/g) || []).length, expected);
+  assert.equal((sitemap.match(/<loc>/g) || []).length, expected + 1);
+  const home = fs.readFileSync(path.join(site, 'index.html'), 'utf8');
+  const canonical = home.match(/rel="canonical" href="([^"]+)"/)[1];
+  assert.ok(sitemap.includes(`<loc>${canonical}</loc>`));
   for (const [language, locale] of Object.entries(locales)) for (const id of Object.keys(locale.questionnaires)) assert.ok(sitemap.includes(`/${route(language, id)}</loc>`));
 });
 

@@ -1,0 +1,27 @@
+{% assign locale = site.data.locales.en %}
+{% assign t = locale.ui %}
+{% assign prefix = '' %}
+{% assign support_url = 'https://findahelpline.com/' %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self' data:; connect-src 'none'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>{{ site.title }} · PHQ-9, GAD-7 and WHO-5</title>
+  <meta name="description" content="{{ page.description | escape }}">
+  <meta name="theme-color" content="#1758ad">
+  <link rel="canonical" href="{{ '/' | absolute_url }}">
+  <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  {% include site-header.html %}
+  <main id="main" class="wrap home">
+    {{ content }}
+  </main>
+  {% include site-footer.html %}
+</body>
+</html>
