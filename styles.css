@@ -267,8 +267,6 @@ dialog .actions { justify-content: flex-end; }
 .languages { border-top: 1px solid var(--line); padding: 16px 0; font-size: 14px; }
 .languages summary { cursor: pointer; min-height: 44px; display: list-item; align-content: center; color: var(--blue); }
 .languages ul { display: flex; flex-wrap: wrap; list-style: none; gap: 8px 20px; padding: 0; margin: 8px 0; }
-.languages .language-group-latin { display: block; columns: 3 11rem; column-gap: 24px; }
-.languages .language-group-latin li { break-inside: avoid; }
 .languages .language-group + .language-group { margin-top: 20px; }
 .languages a { display: inline-block; padding: 8px 0; min-height: 44px; }
 .languages [aria-current=page] { font-weight: 700; }

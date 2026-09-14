@@ -193,7 +193,7 @@
       <details class="languages">
         <summary>{{ t.languages | escape }}</summary>
         {% for group in site.data.language_groups %}
-        <ul class="language-group{% if forloop.first %} language-group-latin{% endif %}" dir="ltr">
+        <ul class="language-group" dir="ltr">
           {% for code in group %}
           {% assign language_entry = site.data.locales[code] %}
           {% if language_entry.questionnaires[page.questionnaire] %}
