@@ -48,4 +48,4 @@ A dedicated hostname isolates saved results from unrelated Pages projects on the
 
 Verify wording and scoring against the original source before changing an instrument. Check score boundaries and keyboard controls after changes. The matrix appears from 640px, joined rows from 481–639px, and joined vertical choices at 480px and below.
 
-These are screening instruments, not a diagnostic service. Source attribution and terms are in [NOTICE.md](NOTICE.md).
+These are screening instruments, not a diagnostic service. Source attribution and terms are in the [README](README.md#sources-and-permissions).
