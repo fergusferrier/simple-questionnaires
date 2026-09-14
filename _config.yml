@@ -1,6 +1,6 @@
 title: Simple Questionnaires
-url: ""
-baseurl: ""
+url: "https://fergusferrier.github.io"
+baseurl: "/simple-questionnaires"
 kramdown:
   input: Kramdown
 
