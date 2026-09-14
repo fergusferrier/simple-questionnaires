@@ -240,12 +240,13 @@ function formatResult(id, values, date) {
   function resultText() {
     return formatResult(instrument, answers(), dateFormat.format(new Date(completedAt)));
   }
-  // A sticky heading must not cover an answer reached with the keyboard.
+  // Sticky prompts and headings must not cover an answer reached with the keyboard.
+  const prompt = form.querySelector('.instructions');
   const matrixHeading = form.querySelector('thead');
   form.addEventListener('focusin', event => {
-    if (!event.target.matches('input[type="radio"]') || !matrixHeading.offsetHeight) return;
+    if (!event.target.matches('input[type="radio"]')) return;
     const answerTop = event.target.getBoundingClientRect().top;
-    const headingBottom = matrixHeading.getBoundingClientRect().bottom;
+    const headingBottom = Math.max(prompt.getBoundingClientRect().bottom, matrixHeading.getBoundingClientRect().bottom);
     if (answerTop < headingBottom + 8) event.target.scrollIntoView({ block: 'center' });
   });
   form.addEventListener('submit', event => event.preventDefault());

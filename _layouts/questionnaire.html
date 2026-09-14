@@ -76,7 +76,7 @@
           <colgroup><col class="question-col">{% for option in text.options %}<col>{% endfor %}</colgroup>
           <thead>
             <tr>
-              <td></td>
+              <td class="matrix-prompt">{{ text.instruction | markdownify }}</td>
               {% for option in text.options %}<th scope="col">{{ option | escape }}</th>{% endfor %}
             </tr>
           </thead>

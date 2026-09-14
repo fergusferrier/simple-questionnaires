@@ -49,11 +49,16 @@ h1 span { font-size: 17px; font-weight: 450; letter-spacing: 0; color: var(--mut
 .work { margin-top: 24px; background: white; border: 1px solid var(--line); border-radius: 10px; overflow: clip; }
 .instructions { padding: 16px 20px; border-bottom: 1px solid var(--line); }
 .instructions p { margin: 0; line-height: 1.45; }
+@media screen {
+  .instructions { position: sticky; top: 0; z-index: 5; background: white; }
+}
 .question-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
 .question-table .question-col { width: 52%; }
 .question-table.who .question-col { width: 38%; }
 .question-table thead { background: #f7f9fb; }
 .question-table thead th { font-size: 14px; font-weight: 550; color: var(--ink); line-height: 1.25; padding: 12px 6px; text-align: center; }
+.question-table .matrix-prompt { padding: 12px 20px; text-align: start; }
+.matrix-prompt p { margin: 0; line-height: 1.45; }
 .question-table tbody tr { border-top: 1px solid #e6ebf0; }
 .question-table tbody th { font-weight: 450; text-align: start; padding: 10px 12px; padding-inline-start: 20px; font-size: 16px; line-height: 1.35; }
 .question-label { display: flex; gap: 12px; }
@@ -74,6 +79,8 @@ h1 span { font-size: 17px; font-weight: 450; letter-spacing: 0; color: var(--mut
 
 /* Matrix headers stay visible; guides follow the pointer or keyboard focus. */
 @media screen and (min-width: 640px) {
+  .intro { padding-bottom: 16px; }
+  .instructions { display: none; }
   .question-table thead { position: sticky; top: 0; z-index: 4; box-shadow: 0 1px 0 var(--line); }
   .question-table tbody tr:has(.choice:hover, input:focus-visible) > * {
     background: #f4f7fb;
@@ -174,7 +181,7 @@ dialog .actions { justify-content: flex-end; }
 @media screen and (max-width: 639px) {
   .question-table, .question-table tbody { display: block; }
   .question-table colgroup, .question-table thead { display: none; }
-  .question-table tbody tr { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); padding: 12px 14px; gap: 0; }
+  .question-table tbody tr { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); padding: 12px 14px; gap: 0; border-top: 0; }
   .question-table.who tbody tr { grid-template-columns: repeat(6, minmax(0, 1fr)); }
   .question-table tbody th { grid-column: 1 / -1; display: block; padding: 0; margin: 0 0 9px; }
   .question-table td, .question-table td:last-child { display: block; padding: 0; min-width: 0; }
@@ -234,11 +241,12 @@ dialog .actions { justify-content: flex-end; }
 }
 
 @media print {
+  .instructions { display: none; }
   body { background: white; }
   .wrap { max-width: none; padding: 0; }
   .topbar, .skip, .result-privacy, .history, .history-privacy, .details-stack, .actions, .benefits, .notice, .support-button, #copy-fallback { display: none !important; }
   .disclaimer-panel { background: white; border: 0; border-top: 1px solid var(--line); border-radius: 0; margin: 12px 0 0; padding: 12px 0 0; break-inside: avoid; }
-  .intro { padding-top: 0; }
+  .intro { padding-top: 0; padding-bottom: 16px; }
   .work { border: 0; margin-top: 0; }
   .question-table tbody tr, .support, .result { break-inside: avoid; }
   .choice, .choice-face { min-height: 25px; }
