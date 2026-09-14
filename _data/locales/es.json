@@ -14,9 +14,6 @@
     "chooseAnswer": "Seleccione una respuesta para cada afirmación.",
     "supportTitle": "El apoyo importa, sea cual sea su puntuación total",
     "supportText": "Ha indicado pensamientos de muerte o autolesión. Hable de ello con un profesional de la salud lo antes posible. Si cree que podría actuar según estos pensamientos o no puede mantenerse a salvo, contacte ahora con el servicio de emergencias de su localidad.",
-    "supportUK": "Reino Unido e Irlanda: Samaritans 116 123",
-    "supportUS": "EE. UU.: llame o envíe un mensaje de texto al 988",
-    "supportOther": "Otros países: busque una línea de ayuda",
     "notMonitored": "Este sitio no está supervisado y no puede solicitar ayuda por usted.",
     "resultTitle": "Resultado:",
     "incomplete": "Responda todas las preguntas para ver su resultado.",
@@ -87,7 +84,8 @@
     "bandSevere": "Grave",
     "whoCredits": "Organización Mundial de la Salud. Índice de bienestar de cinco elementos de la OMS (WHO-5). Ginebra: Organización Mundial de la Salud; 2024. © OMS 2024.",
     "whoAdaptation": "Presentación e instrucciones adaptadas para la web. Se mantienen las opciones de respuesta y la puntuación. La OMS no respalda este sitio.",
-    "whoLicence": "Cuestionario y su presentación digital:"
+    "whoLicence": "Cuestionario y su presentación digital:",
+    "supportCountry": "Busque apoyo en su país"
   },
   "questionnaires": {
     "phq-9": {

@@ -1,6 +1,6 @@
 # Develop and maintain the site
 
-Jekyll renders all three pages from one HTML layout, shared scoring definitions and a text file per language. The published pages contain the full questions and native radio controls. Shared vanilla JavaScript handles scoring and history; one CSS file controls presentation.
+Jekyll renders every questionnaire page from one HTML layout, shared scoring definitions and a text file per language. The published pages contain the full questions and native radio controls. Shared vanilla JavaScript handles scoring and history; one CSS file controls presentation.
 
 ## Edit the site
 
@@ -12,7 +12,7 @@ Jekyll renders all three pages from one HTML layout, shared scoring definitions 
 | `styles.css` | Shared styles and responsive layouts |
 | `app.js` | Scoring, saving and interaction logic |
 | `phq-9.html`, `gad-7.html`, `who-5.html` | English page declarations |
-| `es/`, `fr/`, `de/` | Translated page declarations and locale script selectors |
+| `<code>/`, such as `es/` or `ar/` | Translated page declarations and locale script selectors |
 | `translations/catalog.json` | Source PDF URLs, checksums, variants and review status |
 
 Jekyll writes generated files to `_site/`. Edit the source files above; generated files are replaced on the next build.
@@ -59,8 +59,8 @@ English is the default at existing URLs. Translations have paths such as `/es/ph
 
 1. Select and verify a source from the [translation catalogue](translations/README.md). Preserve the wording, item order and response-to-score mapping. Record any deliberate adaptations.
 2. Create `_data/locales/<code>.json` using English as the interface-key reference. Translate every interface string and preserve substitution tokens such as `{score}`. Include only questionnaires with verified translations.
-3. Add a small `<code>/<instrument>.html` declaration for each available questionnaire, with `layout: questionnaire`, `questionnaire: <instrument>` and `lang: <code>` in its front matter. Copy a current locale's `index.html` and `locale.js` selectors, changing their `lang`.
-4. Set `dir` appropriately. Test right-to-left layouts before releasing a language that uses them; the first three translations are left-to-right.
+3. Add a small `<code>/<instrument>.html` declaration for each available questionnaire, with `layout: questionnaire`, `questionnaire: <instrument>` and `lang: "<code>"` in its front matter. Copy a current locale's `index.html` and `locale.js` selectors, changing their `lang`. Quote language codes in YAML, especially `"no"`, which YAML otherwise treats as a boolean.
+4. Set `dir` appropriately. Arabic, Hebrew, Persian and Urdu use right-to-left layouts. Test the question order, joined button corners, numeric scores and saved history.
 5. Run the checks below, then review all included forms in the browser. Complete a form, copy its result, save, change language and delete history. Check keyboard controls and widths around 480px and 640px.
 6. Mark the reviewed sources `included` in the catalogue.
 

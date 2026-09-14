@@ -14,9 +14,6 @@
     "chooseAnswer": "Wählen Sie für jede Aussage eine Antwort aus.",
     "supportTitle": "Unterstützung ist wichtig, unabhängig von Ihrer Gesamtpunktzahl",
     "supportText": "Sie haben Gedanken an den Tod oder an Selbstverletzung angegeben. Bitte besprechen Sie dies zeitnah mit einer Fachperson im Gesundheitswesen. Wenn Sie befürchten, diesen Gedanken zu folgen, oder sich nicht in Sicherheit halten können, verständigen Sie jetzt den örtlichen Notruf.",
-    "supportUK": "Großbritannien und Irland: Samaritans 116 123",
-    "supportUS": "USA: Rufen Sie an oder senden Sie eine SMS an 988",
-    "supportOther": "Andere Länder: Finden Sie eine Hotline",
     "notMonitored": "Diese Website wird nicht überwacht und kann keine Hilfe für Sie verständigen.",
     "resultTitle": "Ergebnis:",
     "incomplete": "Beantworten Sie alle Fragen, um Ihr Ergebnis zu sehen.",
@@ -87,7 +84,8 @@
     "bandSevere": "Schwer",
     "whoCredits": "Weltgesundheitsorganisation. WHO-5-Fragebogen zum Wohlbefinden. Genf: Weltgesundheitsorganisation; 2024. © WHO 2024.",
     "whoAdaptation": "Layout und Anweisungen wurden für die Website angepasst. Der Wortlaut der Aussagen, die Antwortmöglichkeiten und die Auswertung bleiben erhalten. Die WHO befürwortet diese Website nicht.",
-    "whoLicence": "Fragebogen und seine digitale Präsentation:"
+    "whoLicence": "Fragebogen und seine digitale Präsentation:",
+    "supportCountry": "Unterstützung in Ihrem Land finden"
   },
   "questionnaires": {
     "phq-9": {

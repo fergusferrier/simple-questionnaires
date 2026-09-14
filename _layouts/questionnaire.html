@@ -42,7 +42,7 @@
         {% assign translated_entry = locale.questionnaires[instrument_key] %}
         {% assign route = prefix | append: '/' | append: entry[0] | append: '.html' %}
         {% unless translated_entry %}{% assign route = '/' | append: entry[0] | append: '.html' %}{% endunless %}
-        <a href="{{ route | relative_url }}"{% if page.questionnaire == entry[0] %} aria-current="page"{% endif %}>{{ entry[1].name }}{% unless translated_entry %} <small lang="en">(English)</small>{% endunless %}</a>
+        <a href="{{ route | relative_url }}"{% if page.questionnaire == entry[0] %} aria-current="page"{% endif %}><bdi>{{ entry[1].name }}</bdi>{% unless translated_entry %} <small lang="en">(English)</small>{% endunless %}</a>
         {% endfor %}
       </nav>
     </div>
@@ -63,7 +63,7 @@
     </aside>
     <section class="work" aria-label="{{ t.questionnaireLabel | replace: name_token, q.name | escape }}">
       <div class="intro">
-        <h1>{{ q.name }}<span>{{ text.title }}</span></h1>
+        <h1><bdi>{{ q.name }}</bdi><span>{{ text.title }}</span></h1>
         <p class="about">{{ text.about | escape }}</p>
       </div>
       <form id="questionnaire" autocomplete="off">
@@ -109,9 +109,7 @@
         <h2><span aria-hidden="true">⚠️</span> {{ t.supportTitle | escape }}</h2>
         <p>{{ t.supportText | escape }}</p>
         <div class="support-links">
-          <a href="https://www.samaritans.org/how-we-can-help/contact-samaritan/" rel="noreferrer">{{ t.supportUK | escape }}</a>
-          <a href="https://988lifeline.org/" rel="noreferrer">{{ t.supportUS | escape }}</a>
-          <a href="https://findahelpline.com/" rel="noreferrer">{{ t.supportOther | escape }}</a>
+          <a class="button support-button" href="https://findahelpline.com/" rel="noreferrer">{{ t.supportCountry | escape }} <span aria-hidden="true">→</span></a>
         </div>
         <p class="result-note">{{ t.notMonitored | escape }}</p>
       </aside>
@@ -127,7 +125,7 @@
           <div id="result-details" hidden>
           {% unless q.bands == empty %}
           <div class="scoring-bands" aria-label="{{ t.bandsLabel | escape }}">
-            {% for band in q.bands %}<span data-score-min="{{ band[0] }}" data-score-max="{{ band[1] }}">{{ band[0] }}–{{ band[1] }} {{ text.bandLabels[forloop.index0] | escape }}</span>{% endfor %}
+            {% for band in q.bands %}<span data-score-min="{{ band[0] }}" data-score-max="{{ band[1] }}"><bdi>{{ band[0] }}–{{ band[1] }}</bdi> {{ text.bandLabels[forloop.index0] | escape }}</span>{% endfor %}
           </div>
           {% endunless %}
           <div class="result-note">

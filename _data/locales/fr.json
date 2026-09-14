@@ -14,9 +14,6 @@
     "chooseAnswer": "Sélectionnez une réponse pour chaque énoncé.",
     "supportTitle": "Le soutien compte, quel que soit votre score total",
     "supportText": "Vous avez signalé des pensées de mort ou d’automutilation. Veuillez en discuter rapidement avec un professionnel de la santé. Si vous risquez de donner suite à ces pensées ou si vous ne pouvez pas rester en sécurité, contactez votre service d'urgence local dès maintenant.",
-    "supportUK": "Royaume-Uni et Irlande : Samaritans 116 123",
-    "supportUS": "États-Unis : appelez ou envoyez un SMS au 988",
-    "supportOther": "Autres pays : trouver une ligne d'assistance",
     "notMonitored": "Ce site n'est pas surveillé et ne peut pas appeler de l'aide pour vous.",
     "resultTitle": "Résultat :",
     "incomplete": "Répondez à toutes les questions pour voir votre résultat.",
@@ -87,7 +84,8 @@
     "bandSevere": "Sévère",
     "whoCredits": "Organisation mondiale de la Santé. Indice de bien-être en cinq points de l'OMS (WHO-5). Genève : Organisation mondiale de la Santé ; 2024. © OMS 2024.",
     "whoAdaptation": "Présentation et consignes adaptées au Web. Le texte des énoncés, les réponses proposées et le calcul du score sont conservés. L'OMS ne cautionne pas ce site.",
-    "whoLicence": "Questionnaire et sa présentation numérique :"
+    "whoLicence": "Questionnaire et sa présentation numérique :",
+    "supportCountry": "Trouvez du soutien dans votre pays"
   },
   "questionnaires": {
     "phq-9": {

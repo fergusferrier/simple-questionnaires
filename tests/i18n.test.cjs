@@ -19,8 +19,8 @@ for (const [language, locale] of Object.entries(locales)) {
     assert.deepEqual(Object.keys(locale.ui).sort(), Object.keys(locales.en.ui).sort());
     for (const [key, value] of Object.entries(locale.ui)) {
       assert.equal(typeof value, 'string'); assert.ok(value.trim(), key);
-      assert.deepEqual(value.match(/\{\w+\}/g) || [], locales.en.ui[key].match(/\{\w+\}/g) || [], key);
-      assert.ok(!/ZXQ\d/.test(value), key);
+      assert.deepEqual((value.match(/\{\w+\}/g) || []).sort(), (locales.en.ui[key].match(/\{\w+\}/g) || []).sort(), key);
+      assert.ok(!/ZXQ\d|87654|\ufffd|\(cid:/.test(value), key);
     }
   });
   for (const [id, form] of Object.entries(locale.questionnaires)) {
@@ -28,6 +28,7 @@ for (const [language, locale] of Object.entries(locales)) {
     const maxAnswer = id === 'who-5' ? 5 : 3;
     test(`${language}/${id}: all totals, labels, incomplete answers and copy text`, () => {
       assert.equal(form.items.length, count);
+      for (const value of [...form.items, ...form.options]) { assert.ok(value.trim()); assert.ok(!/ZXQ\d|\ufffd|\(cid:/.test(value)); }
       assert.equal(form.options.length, maxAnswer + 1);
       for (let raw = 0; raw <= count * maxAnswer; raw++) {
         let remainder = raw;
@@ -67,7 +68,7 @@ for (const [language, locale] of Object.entries(locales)) {
     assert.equal(validated.results[0].locale, 'en');
     validated.results.push({ id: 'translated-result', instrument: 'who-5', version: 'WHO-5-English-2024', date: '2026-09-14T13:00:00Z', score: 72, locale: 'es', translationVersion: 'test-version' });
     assert.equal(context.validateHistory(validated).results[1].locale, 'es');
-    assert.equal(context.scoreAnswers('phq-9', [0, 0, 0, 0, 0, 0, 0, 0, 1]).support, true);
+    if (locale.questionnaires['phq-9']) assert.equal(context.scoreAnswers('phq-9', [0, 0, 0, 0, 0, 0, 0, 0, 1]).support, true);
   });
 }
 test('language preferences honour priority, regional variants and unavailable translations', () => {
@@ -76,6 +77,8 @@ test('language preferences honour priority, regional variants and unavailable tr
   assert.equal(preferredLanguage(['en-GB', 'fr'], ['en', 'es', 'fr', 'de']), 'en');
   assert.equal(preferredLanguage(['fr-CA'], ['en', 'de']), null);
   assert.equal(preferredLanguage(['it', 'de-DE'], ['en', 'de']), 'de');
+  assert.equal(preferredLanguage(['nb-NO'], ['en', 'no']), 'no');
+  assert.equal(preferredLanguage(['tl-PH'], ['en', 'fil']), 'fil');
   assert.equal(preferredLanguage(['zh-TW'], ['en', 'zh', 'zh-Hant']), 'zh-Hant');
 });
 test('the sitemap lists only published questionnaire pages', () => {
@@ -83,4 +86,16 @@ test('the sitemap lists only published questionnaire pages', () => {
   const expected = Object.values(locales).reduce((count, locale) => count + Object.keys(locale.questionnaires).length, 0);
   assert.equal((sitemap.match(/<loc>/g) || []).length, expected);
   for (const [language, locale] of Object.entries(locales)) for (const id of Object.keys(locale.questionnaires)) assert.ok(sitemap.includes(`/${route(language, id)}</loc>`));
+});
+
+test('every catalogued translation has exactly one published form', () => {
+  const catalog = JSON.parse(fs.readFileSync('translations/catalog.json', 'utf8'));
+  const sources = Array.isArray(catalog) ? catalog : catalog.sources;
+  for (const source of sources) {
+    const form = locales[source.locale]?.questionnaires[source.instrument];
+    assert.ok(form, `${source.locale}/${source.instrument}`);
+    assert.equal(form.source, source.url);
+    assert.equal(source.status, 'included');
+  }
+  assert.equal(sources.length, Object.entries(locales).filter(([code]) => code !== 'en').reduce((n, [, locale]) => n + Object.keys(locale.questionnaires).length, 0));
 });

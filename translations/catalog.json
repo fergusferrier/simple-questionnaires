@@ -7,7 +7,7 @@
       "variant": "Africaans for South Africa",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Africaans%20for%20South%20Africa.pdf",
       "file": "source-pdfs/phq-9-af.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "a1b993889269ef9943c3adc8a9715017450c403da56a7bd3716f22391de2123f"
     },
     {
@@ -16,7 +16,7 @@
       "variant": "Arabic for Tunisia",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Arabic%20for%20Tunisia.pdf",
       "file": "source-pdfs/phq-9-ar.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "243f28533255efa0910c6653b59f5ce612800a79c1800c3e616d665d11b4fa7c"
     },
     {
@@ -25,7 +25,7 @@
       "variant": "Assamese for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Assamese%20for%20India.pdf",
       "file": "source-pdfs/phq-9-as.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "0e333242de800695f9b22ead44f5e46ab1a8418c4418667a4ab6ed3f1530c93d"
     },
     {
@@ -34,7 +34,7 @@
       "variant": "Bengali for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Bengali%20for%20India.pdf",
       "file": "source-pdfs/phq-9-bn.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "020c11e2d5fb3b6993c6df64c22387e71a61e1bd0965863f5bd7da052829e30c"
     },
     {
@@ -43,7 +43,7 @@
       "variant": "Bulgarian for Bulgaria",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Bulgarian%20for%20Bulgaria.pdf",
       "file": "source-pdfs/phq-9-bg.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "39f5cf7c4254a74e3aece6fb6af4c9067526eacb9ac271839182c64a103a70f2"
     },
     {
@@ -52,7 +52,7 @@
       "variant": "Cebuano for the Philippines",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Cebuano%20for%20the%20Philippines.pdf",
       "file": "source-pdfs/phq-9-ceb.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "f8c8b1e9f42c92c684ef8248775d19a9c6f253681a98bb73b85188a19718a58b"
     },
     {
@@ -61,7 +61,7 @@
       "variant": "Chinese for Singapore",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ-9_AU1.1_Chinese-Singapore.pdf",
       "file": "source-pdfs/phq-9-zh.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "732b26f83ce00cd0cdb6686ff7ebcf31619b764b3643439a08aa8dddddaac38a"
     },
     {
@@ -70,7 +70,7 @@
       "variant": "Croatian for Croatia",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Croatian%20for%20Croatia.pdf",
       "file": "source-pdfs/phq-9-hr.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "389544bf2d4600272f8716c048cb85fd0e6a21d15502ebac4c2997c002888dfd"
     },
     {
@@ -79,7 +79,7 @@
       "variant": "Czech for the Czech Republic",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Czech%20for%20the%20Czech%20Republic.pdf",
       "file": "source-pdfs/phq-9-cs.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "0049530d5361198e62a3120ab758bfdf2c17036645e27a0da5e221254909a6c9"
     },
     {
@@ -88,7 +88,7 @@
       "variant": "Danish for Denmark",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Danish%20for%20Denmark.pdf",
       "file": "source-pdfs/phq-9-da.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "1df747492ca940f05e49180d8a87343b18f2289822a117e44414e631bc419a28"
     },
     {
@@ -97,7 +97,7 @@
       "variant": "Dutch for the Netherlands",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Dutch%20for%20the%20Netherlands.pdf",
       "file": "source-pdfs/phq-9-nl.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "cc8b15a6edd9311ab84bde190cc4fbffec33098637cd4b1907eb86d90680aeae"
     },
     {
@@ -106,7 +106,7 @@
       "variant": "Estonian for Estonia",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ-9_AU1.1_Estonian-Estonia.pdf",
       "file": "source-pdfs/phq-9-et.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "f7cfe70a9be3c477e17c4290035459bf72662cda75417a26ad746ec9f1c448d2"
     },
     {
@@ -115,7 +115,7 @@
       "variant": "Filipino for the Philippines",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Filipino%20for%20the%20Philippines.pdf",
       "file": "source-pdfs/phq-9-fil.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "322ff5a2d5887db1ad817b782dd467b7b4152c6e6e93f7d50ab18105246b6223"
     },
     {
@@ -124,7 +124,7 @@
       "variant": "Finnish for Finland",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Finnish%20for%20Finland.pdf",
       "file": "source-pdfs/phq-9-fi.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "cae825df2d93d1a1fe3e455dc8ea59b43cd7c8702a52a919445177efa89f4cbb"
     },
     {
@@ -151,7 +151,7 @@
       "variant": "Greek for Greece",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Greek%20for%20Greece.pdf",
       "file": "source-pdfs/phq-9-el.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "8cd79b27010d9bcade320dc9628533f1d358a44b264b9c303031213196709580"
     },
     {
@@ -160,7 +160,7 @@
       "variant": "Gujarati for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Gujarati%20for%20India.pdf",
       "file": "source-pdfs/phq-9-gu.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "006e33663c672ad0e4506461e2960e7c6394d662ae65b467afef6ace19ef569f"
     },
     {
@@ -169,7 +169,7 @@
       "variant": "HaitianCreole",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_HaitianCreole.pdf",
       "file": "source-pdfs/phq-9-ht.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "4149f5451aca7ba4e68eb82d13bb432137f3f7c45dfbbd8d5a25529374b5abcc"
     },
     {
@@ -178,7 +178,7 @@
       "variant": "Hebrew for Israel",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Hebrew_For%20Israel.pdf",
       "file": "source-pdfs/phq-9-he.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "0e5b978ff65ec9ea33256143cde49f95c7595508143d2735d9c100b2e9e4c9b2"
     },
     {
@@ -187,7 +187,7 @@
       "variant": "Hindi for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Hindi%20for%20India.pdf",
       "file": "source-pdfs/phq-9-hi.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "df0908016e4c9bc39ea614dd5081051500be9281b4c8b477a4f9716300fe3311"
     },
     {
@@ -196,7 +196,7 @@
       "variant": "Hiligayno for Philippines",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ-9_AU1.1_Hiligaynon-Philippines.pdf",
       "file": "source-pdfs/phq-9-hil.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "4824831ed11d4f26b350d558aa956e61b62a599f9b788891d47416fce67e02df"
     },
     {
@@ -205,7 +205,7 @@
       "variant": "Hungarian for Hungary",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Hungarian%20for%20Hungary.pdf",
       "file": "source-pdfs/phq-9-hu.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "206894cf7bf4919e5213d9c23582ad3a3cd414915ce655294d14872118b9b768"
     },
     {
@@ -214,7 +214,7 @@
       "variant": "Indonesian for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Indonesian%20for%20Indonesia.pdf",
       "file": "source-pdfs/phq-9-id.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "9e4acee5e1cf5fb90be97f8d231e5d8851b0d6b890fd0b1e342cb92cb7836017"
     },
     {
@@ -223,7 +223,7 @@
       "variant": "Italian for Italy",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Italian%20for%20Italy.pdf",
       "file": "source-pdfs/phq-9-it.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "f23350bcc3468553c8c67f6f0e392699562a9d85ba18a5340c55e9b9b96fcd73"
     },
     {
@@ -232,7 +232,7 @@
       "variant": "Japanese for Japan",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Japanese%20for%20Japan.pdf",
       "file": "source-pdfs/phq-9-ja.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "4552f7b2f7047dbea8b9244ce3340bd3ca287153913c0ce0298443bfef91bdab"
     },
     {
@@ -241,7 +241,7 @@
       "variant": "Kannada for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Kannada%20for%20India.pdf",
       "file": "source-pdfs/phq-9-kn.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "b0a78b6c9458e9a30461b92b2e68780da9236f10fb52e509832fbd37ac8b3dbf"
     },
     {
@@ -250,7 +250,7 @@
       "variant": "Korean for Korea",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Korean%20for%20Korea.pdf",
       "file": "source-pdfs/phq-9-ko.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "effeeb0890d7612738dcff9f02a4520911f599bf234ddb94418f07151e5ed6c2"
     },
     {
@@ -259,7 +259,7 @@
       "variant": "Latvian for Latvia",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_latviski_VPP_fin.pdf",
       "file": "source-pdfs/phq-9-lv.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "d47424f27af5722884f66ba5ffcbc4c5184add5505ab799ea9bcad1141366a8e"
     },
     {
@@ -268,7 +268,7 @@
       "variant": "Lithuanian for Lithuania",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Lithuanian%20for%20Lithuania.pdf",
       "file": "source-pdfs/phq-9-lt.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "3dfe0d5907a307678d5a3ce8fd3eb2614f58a4275b2d261b0c280b3913974ed3"
     },
     {
@@ -277,7 +277,7 @@
       "variant": "Malay for Malaysia",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Malay%20for%20Malaysia.pdf",
       "file": "source-pdfs/phq-9-ms.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "a1733efe7a0863f09cf0abe1329d48eb8dacfcab92111d3595609b48c61d966a"
     },
     {
@@ -286,7 +286,7 @@
       "variant": "Malayalam for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Malayalam%20for%20India.pdf",
       "file": "source-pdfs/phq-9-ml.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "440666bda6958df61087991b1be512c24a6b46dc7021e3ac91a73acf8e28bc6c"
     },
     {
@@ -295,7 +295,7 @@
       "variant": "Marathi for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Marathi%20for%20India.pdf",
       "file": "source-pdfs/phq-9-mr.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "4bafd0defbd0ee42a63d5ccf9d0c1d120cb46c977d86e076bb17a62ab3001cc6"
     },
     {
@@ -304,7 +304,7 @@
       "variant": "Norwegian for Norway",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Norwegian%20for%20Norway.pdf",
       "file": "source-pdfs/phq-9-no.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "17d7fea564f2c58a7b9c69f6fbddb8db8e73666c38896ee8083e8277e81a472d"
     },
     {
@@ -313,7 +313,7 @@
       "variant": "Oriya for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Oriya%20for%20India.pdf",
       "file": "source-pdfs/phq-9-or.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "c1f8e9dd53eaddc8e4d6448e159fc9c15d32cdd498ffd575b8da2e8ddcb77815"
     },
     {
@@ -322,7 +322,7 @@
       "variant": "Polish for Poland",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Polish%20for%20Poland.pdf",
       "file": "source-pdfs/phq-9-pl.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "96e084b545288c57130d5e84d44c418d76125d30e843ae756d43e5fe8e2b8947"
     },
     {
@@ -331,7 +331,7 @@
       "variant": "Portugese for Brazil",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Portuguese%20for%20Brazil.pdf",
       "file": "source-pdfs/phq-9-pt.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "57ac04e8800702b26cdc8f210b85bd1e0291d548af14f45617a1807b05967fbd"
     },
     {
@@ -340,7 +340,7 @@
       "variant": "Punjabi for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Punjabi%20for%20India.pdf",
       "file": "source-pdfs/phq-9-pa.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "b756725c4e159af4400bfb74a343912f1966ea3204b5f8eb04482990945b7b1a"
     },
     {
@@ -349,7 +349,7 @@
       "variant": "Romanian for Romania",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Romanian%20for%20Romania.pdf",
       "file": "source-pdfs/phq-9-ro.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "c67198ba851149418d4ac8fba4d7cb9b1bac165ebe34a832d5d4976348b6e2d5"
     },
     {
@@ -358,7 +358,7 @@
       "variant": "Russian for Estonia",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ-9_AU1.1_Russian-Estonia.pdf",
       "file": "source-pdfs/phq-9-ru.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "4df927d7367fae8b035066d0c5e90dba91c901ca2fdb98bf65768bad0d63e8b1"
     },
     {
@@ -367,7 +367,7 @@
       "variant": "Serbian for Serbia",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Serbian%20for%20Serbia.pdf",
       "file": "source-pdfs/phq-9-sr.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "b1a5428d6913839d9e3e3aaf2827b67d4a7663bb73a15fe30b9a25d72d4a604a"
     },
     {
@@ -376,7 +376,7 @@
       "variant": "Slovakian for Slovakia",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Slovakian%20for%20Slovakia.pdf",
       "file": "source-pdfs/phq-9-sk.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "d87246497e15851c6ba33e8ae5ad03505ef190e02407138e2ae14b4c9e931ea5"
     },
     {
@@ -394,7 +394,7 @@
       "variant": "Swahili for Africa",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Swahili%20for%20Africa.pdf",
       "file": "source-pdfs/phq-9-sw.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "771671cb4f3c575054f714934ad0615bca304faf86cbd4e1e53b5e3aca3120fd"
     },
     {
@@ -403,7 +403,7 @@
       "variant": "Swedish for Sweden",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Swedish%20for%20Sweden.pdf",
       "file": "source-pdfs/phq-9-sv.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "5efda82f4df8304be0a2f0ffc51d7e3e0c3d8ea6fd22265c3122265c97fcee8b"
     },
     {
@@ -412,7 +412,7 @@
       "variant": "Tamil for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Tamil%20for%20India.pdf",
       "file": "source-pdfs/phq-9-ta.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "4007c1448855a7355b0c233b755b71facd05bcdac36c8a312fd480ac728e93d2"
     },
     {
@@ -421,7 +421,7 @@
       "variant": "Telugu for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Telugu%20for%20India.pdf",
       "file": "source-pdfs/phq-9-te.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "82e672e6b955ffe881bda2df67357d2f9de92b853b8ee6843c040d00599fe556"
     },
     {
@@ -430,7 +430,7 @@
       "variant": "Thai for Thailand",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Thai%20for%20Thailand.pdf",
       "file": "source-pdfs/phq-9-th.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "f986d52dee768d1a3068fe8268272f55f72bd2eda00d757b09d37133fad16a47"
     },
     {
@@ -439,7 +439,7 @@
       "variant": "Traditional Chinese for Hong Kong",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Traditional%20Chinese%20for%20Hong%20Kong.pdf",
       "file": "source-pdfs/phq-9-zh-Hant.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "353cf974972c6d297dbdafbc3291b58362c5c8704960d849efac61626165f9a7"
     },
     {
@@ -448,7 +448,7 @@
       "variant": "Turkish for Turkey",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Turkish%20for%20Turkey.pdf",
       "file": "source-pdfs/phq-9-tr.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "30cd1211bbdfecfa8bba3e6e774fac54829a6b326852d9a128a37aa87855a647"
     },
     {
@@ -457,7 +457,7 @@
       "variant": "Ukrainian for Ukraine",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/PHQ9_Ukrainian%20for%20Ukraine.pdf",
       "file": "source-pdfs/phq-9-uk.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "fb7fc3c8e3efde1805f589ae446aeb77b702d7b9bbb37aa928518bddf48c98c8"
     },
     {
@@ -466,7 +466,7 @@
       "variant": "Africaans for South Africa",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Africaans%20for%20South%20Africa.pdf",
       "file": "source-pdfs/gad-7-af.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "daae98268fb67e04966ac27cb670cc2c0f1706d88d3e54f08815aaeddc49c16e"
     },
     {
@@ -475,7 +475,7 @@
       "variant": "Arabic for Tunisia",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Arabic%20for%20Tunisia.pdf",
       "file": "source-pdfs/gad-7-ar.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "2922342f058db448ba36e6da79fd55e7cc2beabba218f57d26c40ac73fe1b0bd"
     },
     {
@@ -484,7 +484,7 @@
       "variant": "Bulgarian for Bulgaria",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Bulgarian%20for%20Bulgaria.pdf",
       "file": "source-pdfs/gad-7-bg.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "c444cbf42bcf6cc3c87c092a14c0aa0a65b2f62afbde188d04942dc6eea4a192"
     },
     {
@@ -493,7 +493,7 @@
       "variant": "Cebuano for the Philippines",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Cebuano%20for%20the%20Philippines.pdf",
       "file": "source-pdfs/gad-7-ceb.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "f8cf29827352ec750ff9ffb6d0425e53e7bfa150c5b29f4e79ccb1e4e99caa4b"
     },
     {
@@ -502,7 +502,7 @@
       "variant": "Chinese for China",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Chinese%20for%20China.pdf",
       "file": "source-pdfs/gad-7-zh.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "eb4154243805de80b699b135f164e19d22035f549bf9b3cd33d17c952466be5f"
     },
     {
@@ -511,7 +511,7 @@
       "variant": "Croatian for Croatia",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Croatian%20for%20Croatia.pdf",
       "file": "source-pdfs/gad-7-hr.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "dec45d2ece39e469d498613274edc1e6a81eb81e668dcf73ccef1cf9f6d27c9b"
     },
     {
@@ -520,7 +520,7 @@
       "variant": "Czech for the Czech Republic",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Czech%20for%20the%20Czech%20Republic.pdf",
       "file": "source-pdfs/gad-7-cs.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "4621136f11f3523e172fe5072e4fdb7dc41720930f75594af75499256a37ae38"
     },
     {
@@ -529,7 +529,7 @@
       "variant": "Danish for Denmark",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Danish%20for%20Denmark.pdf",
       "file": "source-pdfs/gad-7-da.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "e830a869e9aa08d5f1c050e56d1edfb2994d877596fff9b7005efe63d1c6e855"
     },
     {
@@ -538,7 +538,7 @@
       "variant": "Dutch for the Netherlands",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Dutch%20for%20the%20Netherlands.pdf",
       "file": "source-pdfs/gad-7-nl.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "de83e850f54518651b3a06452f0ad72a08424d2176196f5efa5e715cf13c8368"
     },
     {
@@ -547,7 +547,7 @@
       "variant": "Filipino for the Philippines",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Filipino%20for%20the%20Philippines.pdf",
       "file": "source-pdfs/gad-7-fil.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "96b28c61dfbc2a605189b073de0185224d4a2f8bfcbfb1f8a64668eb90003dc3"
     },
     {
@@ -556,7 +556,7 @@
       "variant": "Finnish for Finland",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Finnish%20for%20Finland.pdf",
       "file": "source-pdfs/gad-7-fi.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "15522fb0646bf9031291746d31af321030de930fe1dd8f64d2bc8f81e372b08a"
     },
     {
@@ -583,7 +583,7 @@
       "variant": "Greek for Greece",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Greek%20for%20Greece.pdf",
       "file": "source-pdfs/gad-7-el.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "5a4a03a7f6f1021e1a11b49f3b1a0ac5f53d10b8ee6d31887551ed5de605eb09"
     },
     {
@@ -592,7 +592,7 @@
       "variant": "Gujarati for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Gujarati%20for%20India.pdf",
       "file": "source-pdfs/gad-7-gu.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "d8942715dfac1f06355dbe57fa2ca5b080af6ca0fe67ccd505ee73f08d4e9ec6"
     },
     {
@@ -601,7 +601,7 @@
       "variant": "Hebrew for Israel",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Hebrew%20for%20Israel.pdf",
       "file": "source-pdfs/gad-7-he.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "6906da5acda954ac4756f0ea16d55f54fae24465cd78b6a1ba651a15425fcb3a"
     },
     {
@@ -610,7 +610,7 @@
       "variant": "Hindi for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Hindi%20for%20India.pdf",
       "file": "source-pdfs/gad-7-hi.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "c2b2da119bff837741f18f3acbc58d69d2bc339d355f3e2643616ce535a503b6"
     },
     {
@@ -619,7 +619,7 @@
       "variant": "Hungarian for Hungary",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Hungarian%20for%20Hungary.pdf",
       "file": "source-pdfs/gad-7-hu.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "9a33145a805a4f9cf715807472bebd182658ebecc43df56a0343ef5a26ba3409"
     },
     {
@@ -628,7 +628,7 @@
       "variant": "Indonesian for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Indonesian%20for%20India.pdf",
       "file": "source-pdfs/gad-7-id.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "4612fbcefe574bb48a96e846e8e2baef2932a542b348387168731304d48aeef8"
     },
     {
@@ -637,7 +637,7 @@
       "variant": "Italian for Italy",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Italian%20for%20Italy.pdf",
       "file": "source-pdfs/gad-7-it.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "d2707951ee8c6313add0e1490f202ce69ec984a2c355d2e8bf70bea1d0ddf0d0"
     },
     {
@@ -646,8 +646,9 @@
       "variant": "Kannada for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Kannada%20for%20India.pdf",
       "file": "source-pdfs/gad-7-kn.pdf",
-      "status": "pending-review",
-      "sha256": "cc1e754665c8507fd9ce4a78b207d856e048a0bee08e7d6bb136679dcfea0f7b"
+      "status": "included",
+      "sha256": "cc1e754665c8507fd9ce4a78b207d856e048a0bee08e7d6bb136679dcfea0f7b",
+      "adaptationNote": "ಎರಡನೇ ಹೇಳಿಕೆಯಲ್ಲಿ ಮೂಲದ ಮುದ್ರಣದೋಷವನ್ನು ಸರಿಪಡಿಸಲಾಗಿದೆ: “ಧ್ಯವಾಗದಿರುವುದು” ಬದಲಿಗೆ “ಸಾಧ್ಯವಾಗದಿರುವುದು”."
     },
     {
       "instrument": "gad-7",
@@ -655,7 +656,7 @@
       "variant": "Korean for Korea",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Korean%20for%20Korea.pdf",
       "file": "source-pdfs/gad-7-ko.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "5313f43027b6185d63c4bdd9f832441a5f4193213dd644c469b4511046ee2549"
     },
     {
@@ -664,7 +665,7 @@
       "variant": "Latvian for Latvia",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD-7_latv_VPP_fin.pdf",
       "file": "source-pdfs/gad-7-lv.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "4429c6f4a6a9fcba4d400ecb6e3cfdeb5d80fa2025976325d2e01e08f9db3ab3"
     },
     {
@@ -673,7 +674,7 @@
       "variant": "Lithuanian for Lithuania",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Lithuanian%20for%20Lithuania.pdf",
       "file": "source-pdfs/gad-7-lt.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "e744bb57befe765d93ea1d59b64880c71c7b4121199ce7978abb9bd0fc47809a"
     },
     {
@@ -682,7 +683,7 @@
       "variant": "Malay for Malaysia",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD-7_AU1.0_may-MY.pdf",
       "file": "source-pdfs/gad-7-ms.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "827345f2fcc6462c465cf4a0280a19cc3e3f8e329083cf658dcdb651bd54afb4"
     },
     {
@@ -691,7 +692,7 @@
       "variant": "Malayalam for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Malayalam%20for%20India.pdf",
       "file": "source-pdfs/gad-7-ml.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "9ceed5255ddf51dacf7257416d974bcc0a28311a3e1b9f9a45954de01f59d097"
     },
     {
@@ -700,7 +701,7 @@
       "variant": "Marathi for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Marathi%20for%20India.pdf",
       "file": "source-pdfs/gad-7-mr.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "03e538c8356c7ac49b6f84be93c4d1b2732b8f2ce921f62ce6fd93cf22cd0cee"
     },
     {
@@ -709,7 +710,7 @@
       "variant": "Norwegian for Norway",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Norwegian%20for%20Norway.pdf",
       "file": "source-pdfs/gad-7-no.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "b1dd8e6248b6f21ae837a011bebb80be671a36ea5ebfe51241dae7a1600f919e"
     },
     {
@@ -718,7 +719,7 @@
       "variant": "Polish for Poland",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Polish%20for%20Poland.pdf",
       "file": "source-pdfs/gad-7-pl.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "109177c7fb7bbce1e34a49b74573029e3a7975b255d5b7961ee9450e0b8dcf93"
     },
     {
@@ -727,7 +728,7 @@
       "variant": "Portugese for Brazil",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Portuguese%20for%20Brazil.pdf",
       "file": "source-pdfs/gad-7-pt.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "e57d3c0d6224b3fd2c21ff6621b536be42ab90c9cf695561756816d1d2951b3b"
     },
     {
@@ -736,7 +737,7 @@
       "variant": "Punjabi for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Punjabi%20for%20India.pdf",
       "file": "source-pdfs/gad-7-pa.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "83ec2191fbfa428d9ad90a12c848c14838367f637cac4999d16fafe7db325b63"
     },
     {
@@ -745,7 +746,7 @@
       "variant": "Romanian for Romania",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Romanian%20for%20Romania.pdf",
       "file": "source-pdfs/gad-7-ro.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "907fdfe8ec4cc7eb4c1e27a6dafa66b2abee21ac851794995f34be80b2768da0"
     },
     {
@@ -754,7 +755,7 @@
       "variant": "Russian for Latvia",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD-7_rus_Vpp_fin.pdf",
       "file": "source-pdfs/gad-7-ru.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "4e5af1a977cc3c84f477d9450c92101d36d8c57981f07b6c138ce874cfb1d2b5"
     },
     {
@@ -763,7 +764,7 @@
       "variant": "Slovakian for Slovakia",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Slovakian%20for%20Slovakia.pdf",
       "file": "source-pdfs/gad-7-sk.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "e1c2ccf585d98a347c3e98795e0ae0c5f441239af40d4b6d3805af1d74ec32b4"
     },
     {
@@ -781,7 +782,7 @@
       "variant": "Swedish for Sweden",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Swedish%20for%20Sweden.pdf",
       "file": "source-pdfs/gad-7-sv.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "2909f17251247a3bff914ed718d684e2fc77597610a1052d67e8600a5195b9ca"
     },
     {
@@ -790,7 +791,7 @@
       "variant": "Tamil for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Tamil%20for%20India.pdf",
       "file": "source-pdfs/gad-7-ta.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "df50c9b91831fa01a851c61f8e730b0cc7e0a40311bc1ea959038621cc56af7c"
     },
     {
@@ -799,7 +800,7 @@
       "variant": "Telugu for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Telugu%20for%20India.pdf",
       "file": "source-pdfs/gad-7-te.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "6b26e0b392c2e5990620635a0c4645c6daccb7c989f08fc4c49177467b97306d"
     },
     {
@@ -808,7 +809,7 @@
       "variant": "Thai for Thailand",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Thai%20for%20Thailand.pdf",
       "file": "source-pdfs/gad-7-th.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "90b1e9d3e67176cfb0d049cee2256d81533c00d63442ba5d1572b068d4686712"
     },
     {
@@ -817,7 +818,7 @@
       "variant": "Traditional Chinese for Hong Kong",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Traditional%20Chinese%20for%20Hong%20Kong.pdf",
       "file": "source-pdfs/gad-7-zh-Hant.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "dcbcb68e6176da317b135dcad05d629b54ae59691fef878287ff20b8f7743089"
     },
     {
@@ -826,7 +827,7 @@
       "variant": "Turkish for Turkey",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Turkish%20for%20Turkey.pdf",
       "file": "source-pdfs/gad-7-tr.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "9c81e078269cfbddf4eabd7d9cc858f5c2b62f598aa7162adb06f9b50398206d"
     },
     {
@@ -835,7 +836,7 @@
       "variant": "Ukrainian for Ukraine",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Ukrainian%20for%20Ukraine.pdf",
       "file": "source-pdfs/gad-7-uk.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "3ee2fad228eb47e3ec889ea21c94a3266bfd4aa7bdbf74f5fd428c38c3ea7627"
     },
     {
@@ -844,7 +845,7 @@
       "variant": "Urdu for India",
       "url": "https://www.phqscreeners.com/images/sites/g/files/g10060481/f/201412/GAD7_Urdu%20for%20India.pdf",
       "file": "source-pdfs/gad-7-ur.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "7477af0f556dee3edce9d8dae0aff60940330ef1dd444f1dd2b6bf9e8cea3f6f"
     },
     {
@@ -854,7 +855,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_albanian.pdf?sfvrsn=65917cd3_3",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-sq.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "ad2f2bf75fe2d54a4bff558cec4d44b351072f21b965d8fe816d779fabaef4b2"
     },
     {
@@ -864,7 +865,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5-final-bangla-version.pdf?sfvrsn=fdfbf4a7_5",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-bn.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "94981955bb380d62d88e1180beca172732c6b9336aca734e96cb6517e399bd9c"
     },
     {
@@ -874,7 +875,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_bulgarian.pdf?sfvrsn=7622a766_3",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-bg.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "b6ca935e818792e23236ac44b373ba160da1a19e4ef5db6163ef7da8cfe3eea6"
     },
     {
@@ -884,7 +885,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who5_chinese_pr.pdf?sfvrsn=a6a33639_5",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-zh.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "2d4e8cc7a36bf31b56b7061bddc3a995496a153778cd842241eb9c43ba1cc298"
     },
     {
@@ -894,7 +895,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_czech.pdf?sfvrsn=30f7fed7_3",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-cs.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "f997692b87d4751d5e048ee1bda87cfb284fc49b696656c9345e51be6807a4d8"
     },
     {
@@ -904,7 +905,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_danish.pdf?sfvrsn=c29763e9_3",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-da.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "c34febf806012ca6ead1f817e689e439967f3c80c6bcd19d2a3e907a59a1eff8"
     },
     {
@@ -914,7 +915,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_dutch.pdf?sfvrsn=eb69010b_3",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-nl.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "ca9fdb6ee856b81d817c5735e9beccf26c1510b600498d0ba1f7c4d90eb31c89"
     },
     {
@@ -924,7 +925,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_farsi.pdf?sfvrsn=c780c5fa_5",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-fa.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "5214a8eff807ef3a0ef342e019e62877ebcaa986d536ad0b331db0710533b950"
     },
     {
@@ -934,7 +935,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_filipino.pdf?sfvrsn=c73d7dfd_7",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-fil.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "609eabddd2742ff8639917681a95e457cb54bed1a0c094507de52d88003cb645"
     },
     {
@@ -944,7 +945,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_finnish.pdf?sfvrsn=3c985249_3",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-fi.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "539cc9df72a1aac5af84409ec5daf512393cf78346d44da2664ea4337062af69"
     },
     {
@@ -964,7 +965,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_greek.pdf?sfvrsn=52534c0b_5",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-el.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "395e492c3b498de4b01f77efc252e0a48e66e63460b381037c30a5d7b8aff82f"
     },
     {
@@ -974,7 +975,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_hebrew.pdf?sfvrsn=382e294a_7",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-he.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "9ee8826801b98b57c3ff94883f6d2b153c465cf0ca246187669edc88e0af1c68"
     },
     {
@@ -984,8 +985,9 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_hungarian.pdf?sfvrsn=357833bd_3",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-hu.pdf",
-      "status": "pending-review",
-      "sha256": "4c32cd86a1047bc380a444c1fafad0823c823931fe5bc6c09ba09a3998005309"
+      "status": "included",
+      "sha256": "4c32cd86a1047bc380a444c1fafad0823c823931fe5bc6c09ba09a3998005309",
+      "adaptationNote": "A nyomtatott forrás elírásait javítottuk: „magma” helyett „magam” (2. és 3. állítás), „dogokkal” helyett „dolgokkal” (5. állítás)."
     },
     {
       "instrument": "who-5",
@@ -994,8 +996,9 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_icelandic.pdf?sfvrsn=a0948323_9",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-is.pdf",
-      "status": "pending-review",
-      "sha256": "408abf74a830042cf398ce0a28b920533a12efc0e6be8d43089ab675b0571a4f"
+      "status": "included",
+      "sha256": "408abf74a830042cf398ce0a28b920533a12efc0e6be8d43089ab675b0571a4f",
+      "adaptationNote": "Í stafræna textanum hefur „›“ í frumskjalinu verið leiðrétt í „ð“."
     },
     {
       "instrument": "who-5",
@@ -1004,7 +1007,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_italian.pdf?sfvrsn=b0912462_5",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-it.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "233ce43cf7fd9769f709c8e51a13a207e62a546dcbadbeeeb2a15adeca455c97"
     },
     {
@@ -1014,7 +1017,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_japanese.pdf?sfvrsn=f3362e57_5",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-ja.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "461bea7371a0b24518b4384037e0288f2052b173e0d836124e80bd7b5af23ece"
     },
     {
@@ -1024,7 +1027,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_lithuanian.pdf?sfvrsn=c8b9d7fc_3",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-lt.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "ad2cee277657df946849fe9b4d1c45cda6c9c588cd03739e7eab26592df1605d"
     },
     {
@@ -1034,7 +1037,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_norwegian.pdf?sfvrsn=c506d3c1_5",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-no.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "42b3ac37a7fbd7bc86fd47c0b4c7558f2bce7b451eff63c6d713a4aad8564bc7"
     },
     {
@@ -1044,7 +1047,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_polish.pdf?sfvrsn=4df8e167_3",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-pl.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "0f6b42ab23ff1cbbd09fd2d2cfb6ac725611b7cd758ea205216cf1caff5dca92"
     },
     {
@@ -1054,7 +1057,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_romanian.pdf?sfvrsn=cee3da3f_3",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-ro.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "4d8904da0f0622cc5fa542660fd772aac0606ce7a53ceaf5f54c083cb7064510"
     },
     {
@@ -1064,7 +1067,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_slovenian.pdf?sfvrsn=f9adb3c4_3",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-sl.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "6cbe604bf57caf82f1e37303af32099cfe9fd051a8ddacfbbfc320f3c0ea4279"
     },
     {
@@ -1074,7 +1077,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_swedish.pdf?sfvrsn=4e97ccb_3",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-sv.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "01fe48c1929e479844741156daadaf73a76292f666ad6711bfd5579b925a0ea6"
     },
     {
@@ -1084,7 +1087,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_thai.pdf?sfvrsn=e3225d16_3",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-th.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "731c09aed407a9804dbd84d4546c413020248c1d878d86246f4b24eeed4a5435"
     },
     {
@@ -1094,7 +1097,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_turkish.pdf?sfvrsn=67d0c2f4_5",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-tr.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "d0cc6f8b4c78c54e9059b837d5fc78839ce124c1dde391220ef5155279f593ce"
     },
     {
@@ -1104,7 +1107,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/five-well-being-index-(who-5)/who-5_urdu.pdf?sfvrsn=1e797dc6_5",
       "publication": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-ur.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "bde933fae8d02e4a3926ba6f35b1b48f84e3b571e0cb0a2bad5658ba4fa61906"
     },
     {
@@ -1134,7 +1137,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/who-5_english-original.pdf?sfvrsn=ed43f352_11&download=true",
       "publication": "https://www.who.int/ar/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-ar.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "d101139019d16a23c14922cba408875cd3468ebaea0af53cbcb0993dd00007d3"
     },
     {
@@ -1144,7 +1147,7 @@
       "url": "https://cdn.who.int/media/docs/default-source/mental-health/who-5_russian.pdf?sfvrsn=ed43f352_11&download=true",
       "publication": "https://www.who.int/ru/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "file": "source-pdfs/who-5-ru.pdf",
-      "status": "pending-review",
+      "status": "included",
       "sha256": "11852a93463c7b7d8d72ee5ac5f4f6b0234334d84924d8b49460ac644991b485"
     }
   ]

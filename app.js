@@ -16,7 +16,8 @@ function preferredLanguage(preferences, available) {
     const normalized = preference.toLowerCase();
     const exact = available.find(code => code.toLowerCase() === normalized);
     if (exact) return exact;
-    const base = normalized.split('-')[0];
+    const language = normalized.split('-')[0];
+    const base = { nb: 'no', tl: 'fil' }[language] || language;
     if (base === 'zh') {
       const traditional = /(?:hant|tw|hk|mo)/i.test(normalized);
       const chinese = available.find(code => code === (traditional ? 'zh-Hant' : 'zh'));
@@ -85,7 +86,7 @@ function formatResult(id, values, date) {
   let storageIssue = false;
   let pendingDelete = null;
   const noticeTimers = new Map();
-  const dateFormat = new Intl.DateTimeFormat(locale.code, { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+  const dateFormat = new Intl.DateTimeFormat(locale.code, { year: 'numeric', month: Intl.DateTimeFormat.supportedLocalesOf(locale.code).length ? 'short' : '2-digit', day: 'numeric', hour: '2-digit', minute: '2-digit' });
 
   function error(message) {
     $('storage-error').hidden = !message;

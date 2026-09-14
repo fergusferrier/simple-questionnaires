@@ -12,7 +12,7 @@ Free questionnaires about depression symptoms, anxiety symptoms and well-being o
 | [GAD-7](https://fergusferrier.github.io/simple-questionnaires/gad-7.html) | Anxiety symptoms |
 | [WHO-5](https://fergusferrier.github.io/simple-questionnaires/who-5.html) | Well-being |
 
-Also available in **[Español](https://fergusferrier.github.io/simple-questionnaires/es/)**, **[Français](https://fergusferrier.github.io/simple-questionnaires/fr/)** and **[Deutsch](https://fergusferrier.github.io/simple-questionnaires/de/)**, including the questions, controls and result explanations.
+Available in English and **56 other language and script versions**, including the controls and result explanations. [Find your language](translations/README.md#available-languages), or open **Languages** near the bottom of any questionnaire. Availability varies by questionnaire.
 
 The layout adapts to your screen, with clear text and controls you can use with a keyboard. You can copy or print a completed result, and choose to save results in your browser to look back on them later.
 
@@ -64,10 +64,10 @@ World Health Organization. *The World Health Organization-Five Well-Being Index 
 
 © World Health Organization 2024. Licensed under [CC BY-NC-SA 3.0 IGO](https://creativecommons.org/licenses/by-nc-sa/3.0/igo/). The questionnaire and its adapted digital presentation in this project use the same licence. This permits attributed, non-commercial reuse under its terms. WHO does not endorse this project. The WHO logo is not used.
 
-The interface changes the layout, simplifies the introductory instruction and uses selection markers instead of printed answer scores. Item wording, response labels and scoring are preserved, apart from correcting a printed typo in Spanish item 4 (“descandado” to “descansado”), disclosed on that page. The five items total 0–25, multiplied by four for a score of 0–100. Higher scores indicate better well-being. Scores below 50 suggest poor well-being and further assessment. This web presentation has not been separately validated.
+The interface changes the layout, simplifies the introductory instruction and uses selection markers instead of printed answer scores. Item wording, response labels and scoring are preserved, apart from the documented corrections to printed errors listed in [Translation sources](translations/README.md#source-choices-and-adaptations). The five items total 0–25, multiplied by four for a score of 0–100. Higher scores indicate better well-being. Scores below 50 suggest poor well-being and further assessment. This web presentation has not been separately validated.
 
 ### Translations
 
-Spanish, French and German PHQ-9 and GAD-7 wording comes from the Spain, France and Germany forms published by PHQ Screeners. WHO-5 wording comes from translations distributed by WHO, originally dated 1998 or 1999. Each translated page links to its source PDF.
+Translated PHQ-9 and GAD-7 wording comes from forms published by PHQ Screeners. WHO-5 wording comes from translations distributed by WHO, including older editions. Each translated page links to its selected source PDF.
 
-The interface text was translated separately and reviewed during implementation; it has not had independent native-speaker or clinical review. Source versions, adaptations and the remaining language catalogue are documented in [Translation sources](translations/README.md).
+Interface text was translated separately with machine assistance and reviewed during implementation. It has not had independent native-speaker or clinical review. Source versions, adaptations and language availability are documented in [Translation sources](translations/README.md).
