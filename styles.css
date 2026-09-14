@@ -55,7 +55,6 @@ h1 span { font-size: 17px; font-weight: 450; letter-spacing: 0; color: var(--mut
 .question-table thead { background: #f7f9fb; }
 .question-table thead th { font-size: 14px; font-weight: 550; color: var(--ink); line-height: 1.25; padding: 12px 6px; text-align: center; }
 .question-table tbody tr { border-top: 1px solid #e6ebf0; }
-.question-table tbody tr:hover { background: #fbfcfe; }
 .question-table tbody th { font-weight: 450; text-align: start; padding: 10px 12px; padding-inline-start: 20px; font-size: 16px; line-height: 1.35; }
 .question-label { display: flex; gap: 12px; }
 .q-number { color: #657487; min-width: 17px; font-size: 13px; padding-top: 3px; font-variant-numeric: tabular-nums; }
@@ -72,6 +71,21 @@ h1 span { font-size: 17px; font-weight: 450; letter-spacing: 0; color: var(--mut
 .choice input:focus-visible + .choice-face { outline: 3px solid #a34800; outline-offset: 2px; }
 .choice:hover .choice-face { border-color: var(--blue); }
 .choice:has(input:checked), .choice:has(input:focus-visible) { z-index: 3; }
+
+/* Matrix guides follow the answer under the pointer or keyboard focus. */
+@media screen and (min-width: 640px) {
+  .question-table tbody tr:has(.choice:hover, input:focus-visible) > * {
+    background: #e4edf7;
+  }
+  .question-table:has(td:nth-child(2) .choice:hover, td:nth-child(2) input:focus-visible) tr > :nth-child(2),
+  .question-table:has(td:nth-child(3) .choice:hover, td:nth-child(3) input:focus-visible) tr > :nth-child(3),
+  .question-table:has(td:nth-child(4) .choice:hover, td:nth-child(4) input:focus-visible) tr > :nth-child(4),
+  .question-table:has(td:nth-child(5) .choice:hover, td:nth-child(5) input:focus-visible) tr > :nth-child(5),
+  .question-table:has(td:nth-child(6) .choice:hover, td:nth-child(6) input:focus-visible) tr > :nth-child(6),
+  .question-table:has(td:nth-child(7) .choice:hover, td:nth-child(7) input:focus-visible) tr > :nth-child(7) {
+    background: #e4edf7;
+  }
+}
 
 /* Result and actions. */
 .result { border-top: 1px solid var(--line); padding: 16px 20px; background: var(--pale); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
