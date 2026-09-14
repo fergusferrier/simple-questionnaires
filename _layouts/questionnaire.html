@@ -1,0 +1,175 @@
+{% assign q = site.data.questionnaires[page.questionnaire] %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>{{ q.name }} {{ q.title | downcase }} · {{ site.title }}</title>
+  <meta name="description" content="Complete the {{ q.fullName }}. Instant score, no account, no tracking. Optional history stays in your browser.">
+  <meta name="theme-color" content="#1758ad">
+  {% if site.url != '' %}<link rel="canonical" href="{{ page.url | absolute_url }}">{% endif %}
+  <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+  <script src="{{ '/app.js' | relative_url }}" defer></script>
+</head>
+<body data-instrument="{{ page.questionnaire }}">
+  <noscript><p class="wrap">JavaScript is off. The full questionnaire is available below; enable JavaScript for scoring and optional history.</p></noscript>
+  <a class="skip" href="#questionnaire">Skip to questionnaire</a>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="{{ '/phq-9.html' | relative_url }}"><span class="brandmark" aria-hidden="true">✓</span>{{ site.title }}</a>
+      <nav aria-label="Questionnaires">
+        {% for entry in site.data.questionnaires %}
+        {% assign route = '/' | append: entry[0] | append: '.html' %}
+        <a href="{{ route | relative_url }}"{% if page.questionnaire == entry[0] %} aria-current="page"{% endif %}>{{ entry[1].name }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+    <div class="benefits">
+      <ul class="wrap" aria-label="Site benefits">
+        <li>instant score</li>
+        <li>no account</li>
+        <li>no tracking</li>
+        <li>optional local save</li>
+      </ul>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="work" aria-label="{{ q.name }} questionnaire">
+      <div class="intro">
+        <h1>{{ q.name }}<span>{{ q.title }}</span></h1>
+        <p class="about">{{ q.about | escape }}</p>
+      </div>
+      <form id="questionnaire" autocomplete="off">
+        <div class="instructions">{{ q.instruction | markdownify }}</div>
+        <table class="question-table{% if page.questionnaire == 'who-5' %} who{% endif %}">
+          <caption class="sr-only">Select one answer for each statement.</caption>
+          <colgroup><col class="question-col">{% for option in q.options %}<col>{% endfor %}</colgroup>
+          <thead>
+            <tr>
+              <td></td>
+              {% for option in q.options %}<th scope="col">{{ option | escape }}</th>{% endfor %}
+            </tr>
+          </thead>
+          <tbody>
+            {% for question in q.items %}
+            {% assign question_index = forloop.index0 %}
+            <tr>
+              <th scope="row" id="question-{{ question_index }}">
+                <span class="question-label">
+                  <span class="q-number" aria-hidden="true">{{ forloop.index }}</span>
+                  <span>{{ question | escape }}</span>
+                </span>
+              </th>
+              {% for option in q.options %}
+              <td>
+                <label class="choice">
+                  <input type="radio" name="q{{ question_index }}" value="{{ q.values[forloop.index0] }}"
+                    aria-labelledby="question-{{ question_index }} answer-{{ question_index }}-{{ forloop.index0 }}">
+                  <span class="choice-face">
+                    <span class="choice-mark" aria-hidden="true"></span>
+                    <span class="mobile-label" aria-hidden="true">{{ option | escape }}</span>
+                  </span>
+                  <span class="sr-only" id="answer-{{ question_index }}-{{ forloop.index0 }}">{{ option | escape }}</span>
+                </label>
+              </td>
+              {% endfor %}
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </form>
+      <aside id="support" class="support" role="status" hidden>
+        <h2><span aria-hidden="true">⚠️</span> Support matters, whatever your total score</h2>
+        <p>You reported thoughts of death or self-harm. Please discuss this with a health professional promptly. If you might act on these thoughts or cannot stay safe, contact your local emergency service now.</p>
+        <div class="support-links">
+          <a href="https://www.samaritans.org/how-we-can-help/contact-samaritan/" rel="noreferrer">UK &amp; Ireland: Samaritans 116 123</a>
+          <a href="https://988lifeline.org/" rel="noreferrer">US: call or text 988</a>
+          <a href="https://findahelpline.com/" rel="noreferrer">Other countries: find a helpline</a>
+        </div>
+        <p class="result-note">This site is not monitored and cannot contact help for you.</p>
+      </aside>
+      <div class="result" id="result">
+        <div class="result-copy" role="status" aria-label="Result" aria-atomic="true">
+          <div class="result-line">
+            <strong class="result-title">Result:</strong>
+            <span class="result-prompt" id="result-prompt">Answer all questions to see your result.</span>
+            <div class="score" id="result-score" hidden><strong id="score-value"></strong><span> / {{ q.max }}</span></div>
+            {% if q.bands == empty %}<span class="result-label" id="result-label"></span>{% endif %}
+          </div>
+          <div id="result-details" hidden>
+          {% unless q.bands == empty %}
+          <div class="scoring-bands" aria-label="Score ranges">
+            {% for band in q.bands %}<span data-score-min="{{ band[0] }}" data-score-max="{{ band[1] }}">{{ band[0] }}–{{ band[1] }} {{ band[2] }}</span>{% endfor %}
+          </div>
+          {% endunless %}
+          <div class="result-note">
+            {{ q.scoring | markdownify }}
+            <div class="score-advice" id="score-advice" hidden><span aria-hidden="true">⚠️</span><div>{{ q.scoreAdvice | markdownify }}</div></div>
+          </div>
+          </div>
+        </div>
+        <div class="actions" id="result-actions" hidden>
+          <button type="button" class="button" id="save-result" hidden>Save results on this device</button>
+          <button type="button" class="button" id="copy-result"><span aria-hidden="true">📋</span> Copy result</button>
+          <button type="button" class="button" id="print-result"><span aria-hidden="true">🖨️</span> Print</button>
+          <button type="button" class="button subtle" id="new-result"><span aria-hidden="true">↻</span> Start again</button>
+        </div>
+        <p id="save-status" class="notice" role="status" aria-atomic="true"></p>
+      </div>
+    </section>
+
+    <div class="result-privacy">
+      <p>Answers, results and scoring stay in your browser and are never sent to us.</p>
+    </div>
+    <section class="history" hidden aria-labelledby="history-title">
+      <div class="section-head">
+        <h2 id="history-title">History<span id="history-count"></span></h2>
+      </div>
+      <p id="storage-error" class="error" role="alert" hidden></p>
+      <table class="history-table" id="history-table" hidden>
+        <caption class="sr-only">Saved results from all three questionnaires</caption>
+        <thead><tr><th scope="col">Date</th><th scope="col">Questionnaire</th><th scope="col">Score</th><th scope="col">Interpretation</th><th scope="col"><span class="sr-only">Actions</span></th></tr></thead>
+        <tbody id="history-rows"></tbody>
+      </table>
+      <div class="history-saving">
+        <p id="history-empty" class="empty">No saved results.</p>
+        <label class="toggle"><input type="checkbox" id="saving-toggle">Save results on this device</label>
+      </div>
+      <div class="history-tools"><button type="button" class="button danger" id="delete-all" hidden>Delete all saved results</button></div>
+      <p id="history-status" class="notice" role="status" aria-atomic="true"></p>
+      <div id="copy-fallback" hidden><label for="copy-text">Copy your result from here</label><textarea id="copy-text" rows="5" readonly></textarea></div>
+    </section>
+    <div class="history-privacy">
+      <p>History - if enabled - is stored in this browser only, and is not synced across browsers or devices or sent over a network. Someone using your browser profile can see it. Using the “Delete all saved results” button, clearing browser data or ending a private browsing session can erase it.</p>
+    </div>
+
+    <div class="details-stack">
+      <section aria-labelledby="sources-title">
+        <h2 id="sources-title">Sources</h2>
+        <p><a href="{{ q.source }}" rel="noreferrer">{{ q.sourceLabel | escape }}</a>{% unless q.source == q.guidance %} · <a href="{{ q.guidance }}" rel="noreferrer">Scoring guidance</a>{% endunless %}{% unless page.questionnaire == 'who-5' %} · <a href="https://www.phqscreeners.com/" rel="noreferrer">PHQ Screeners</a>{% endunless %}</p>
+        {% if q.citation %}{{ q.citation | markdownify }}{% endif %}
+        {% if page.questionnaire == 'who-5' %}
+        <p>World Health Organization. <cite>The World Health Organization-Five Well-Being Index (WHO-5).</cite> Geneva: World Health Organization; 2024. © WHO 2024. Questionnaire and its digital presentation: <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/igo/" rel="noreferrer">CC BY-NC-SA 3.0 IGO</a>. Layout and instructions adapted for the web; item wording, response options and scoring preserved. WHO does not endorse this site.</p>
+        {% else %}
+        <p>Developed by Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues, with an educational grant from Pfizer Inc. No permission required to reproduce, translate, display or distribute.</p>
+        {% endif %}
+      </section>
+    </div>
+    <footer class="disclaimer-panel" aria-label="About these results">
+      <p class="disclaimer"><span aria-hidden="true">⚠️</span> These questionnaires are screening tools for personal, informational use only. Your score cannot diagnose or rule out a mental health condition, or replace professional advice. If you’re concerned about your mental health, seek advice regardless of your score.</p>
+      <a class="button support-button" href="https://findahelpline.com/" rel="noreferrer">Find support <span aria-hidden="true">→</span></a>
+    </footer>
+  </main>
+  <dialog id="delete-dialog" aria-labelledby="delete-title" aria-describedby="delete-description">
+    <h2 id="delete-title">Delete saved results?</h2>
+    <p id="delete-description"></p>
+    <div class="actions">
+      <button type="button" class="button" id="cancel-delete" autofocus>Keep results</button>
+      <button type="button" class="button danger" id="confirm-delete">Delete everything</button>
+    </div>
+  </dialog>
+</body>
+</html>

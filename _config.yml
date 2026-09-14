@@ -1,0 +1,12 @@
+title: Simple Questionnaires
+url: ""
+baseurl: ""
+kramdown:
+  input: Kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - NOTICE.md

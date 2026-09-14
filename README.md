@@ -1,36 +1,56 @@
-# Simple questionnaires
+# Simple Questionnaires
 
 PHQ-9, GAD-7 and WHO-5, with instant scores and optional history in your browser.
 
-Each questionnaire is a self-contained HTML file with inline CSS and vanilla JavaScript. The repository has no packages, dependencies or build step. Edit the HTML files directly. Keep shared behaviour consistent across the three files.
+Jekyll renders all three pages from one HTML layout and one questionnaire data file. The published pages contain the full questions and native radio controls. Shared vanilla JavaScript handles scoring and history; one CSS file controls presentation.
+
+## Edit the site
+
+| File | Edit here |
+| --- | --- |
+| `_layouts/questionnaire.html` | Shared page structure and interface text |
+| `_data/questionnaires.yml` | Questionnaire wording, answer options, scoring bands and sources |
+| `styles.css` | Shared styles and responsive layouts |
+| `app.js` | Scoring, saving and interaction logic |
+| `phq-9.html`, `gad-7.html`, `who-5.html` | Small page declarations selecting each questionnaire |
+
+Jekyll writes generated files to `_site/`. Edit the source files above; generated files are replaced on the next build.
 
 ## Preview locally
 
-From this directory, run:
+Install Ruby and Bundler, then install this project's dependencies once:
 
 ```sh
-python3 -m http.server 4173 --bind 127.0.0.1
+bundle install
 ```
 
-Open [the PHQ-9 page](http://127.0.0.1:4173/phq-9/). The other routes are `/gad-7/` and `/who-5/`.
+Start the preview:
 
-Use a local server when checking history. Browsers do not guarantee consistent localStorage behaviour for `file:` URLs.
+```sh
+bundle exec jekyll serve --host 127.0.0.1 --port 4173
+```
+
+Open [PHQ-9](http://127.0.0.1:4173/phq-9.html), [GAD-7](http://127.0.0.1:4173/gad-7.html) or [WHO-5](http://127.0.0.1:4173/who-5.html). Saving a source file rebuilds the site; refresh the browser to see the change.
+
+To generate the static site without starting a server:
+
+```sh
+bundle exec jekyll build
+```
 
 ## Publish on GitHub Pages
 
 1. Push this directory to its own public GitHub repository
-2. Open **Settings → Pages**
-3. Select **Deploy from a branch**, choose the branch containing these files, and select **/(root)**
-4. Save the setting
+2. Set `url` in `_config.yml` to the site's origin, such as `https://USERNAME.github.io`
+3. Set `baseurl` to the repository path, such as `/simple-questionnaires`, or leave it empty for a site at the domain root
+4. In **Settings → Pages**, select **Deploy from a branch**, choose the source branch and **/(root)**, then save
 
-GitHub serves the HTML files directly. `.nojekyll` disables Jekyll processing. Relative links support both a repository path and a dedicated domain.
+GitHub Pages runs Jekyll and publishes the generated HTML. Canonical links use the configured URL; navigation and assets use the configured base path. For a local preview of a repository-path site, append `--baseurl ''` to the preview command.
 
-Use a dedicated hostname to isolate saved results from unrelated Pages projects on the same origin. Set the hostname before people start saving history, because browser storage does not move between origins.
+A dedicated hostname isolates saved results from unrelated Pages projects on the same origin. Set it before people start saving history: browser storage does not move between origins.
 
-After publishing, add the final questionnaire URLs as canonical links and list them in a sitemap. Verify the site in Search Console and request indexing.
+## Change questionnaire content
 
-## Change the questionnaires
+Verify wording and scoring against the original source before changing an instrument. Check score boundaries and keyboard controls after changes. The matrix appears from 640px, joined rows from 481–639px, and joined vertical choices at 480px and below.
 
-Verify wording and scoring against the original source before changing an instrument. Keep the visible questions, the embedded questionnaire definitions and accessible answer labels consistent. Test the score boundaries and keyboard controls after changes.
-
-The files contain standard screening instruments, not a diagnostic service. Source attribution and terms are in [NOTICE.md](NOTICE.md).
+These are screening instruments, not a diagnostic service. Source attribution and terms are in [NOTICE.md](NOTICE.md).
