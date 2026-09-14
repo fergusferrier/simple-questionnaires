@@ -32,6 +32,6 @@ Each questionnaire page links to its sources and scoring guidance. The [source a
 
 ## Problems or suggestions
 
-[Report an issue or suggest an improvement](https://github.com/fergusferrier/simple-questionnaires/issues). GitHub issues are public, so please leave out personal answers, results and other private information. The issue tracker is for website feedback, not personal health advice or urgent support.
+[Report an issue or suggest an improvement](https://github.com/fergusferrier/simple-questionnaires/issues/new). GitHub issues are public, so please leave out personal answers, results and other private information. The issue tracker is for website feedback, not personal health advice or urgent support.
 
 This GitHub page holds the files used to make the website. If you want to change the code or run your own copy, see the [development guide](DEVELOPING.md).
