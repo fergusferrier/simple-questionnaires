@@ -100,7 +100,7 @@ h1 span { font-size: 17px; font-weight: 450; letter-spacing: 0; color: var(--mut
 
 /* One saving control and one shared history table. */
 .history { margin-top: 22px; }
-.result-privacy, .history-privacy { margin-top: 12px; font-size: 14px; line-height: 1.5; color: var(--muted); }
+.result-privacy, .history-privacy { margin-top: 12px; font-size: 14px; line-height: 1.5; color: var(--muted); text-align: center; }
 .result-privacy p, .history-privacy p { margin: 8px 0; }
 .section-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
 .section-head h2 { font-size: 19px; margin: 0; letter-spacing: -.2px; }
