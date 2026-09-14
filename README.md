@@ -2,6 +2,8 @@
 
 PHQ-9, GAD-7 and WHO-5, with instant scores and optional history in your browser.
 
+[Open Simple Questionnaires](https://fergusferrier.github.io/simple-questionnaires/) · [Report an issue](https://github.com/fergusferrier/simple-questionnaires/issues)
+
 Jekyll renders all three pages from one HTML layout and one questionnaire data file. The published pages contain the full questions and native radio controls. Shared vanilla JavaScript handles scoring and history; one CSS file controls presentation.
 
 ## Edit the site
@@ -27,7 +29,7 @@ bundle install
 Start the preview:
 
 ```sh
-bundle exec jekyll serve --host 127.0.0.1 --port 4173
+bundle exec jekyll serve --host 127.0.0.1 --port 4173 --baseurl ''
 ```
 
 Open [PHQ-9](http://127.0.0.1:4173/phq-9.html), [GAD-7](http://127.0.0.1:4173/gad-7.html) or [WHO-5](http://127.0.0.1:4173/who-5.html). Saving a source file rebuilds the site; refresh the browser to see the change.
@@ -40,12 +42,9 @@ bundle exec jekyll build
 
 ## Publish on GitHub Pages
 
-1. Push this directory to its own public GitHub repository
-2. Set `url` in `_config.yml` to the site's origin, such as `https://USERNAME.github.io`
-3. Set `baseurl` to the repository path, such as `/simple-questionnaires`, or leave it empty for a site at the domain root
-4. In **Settings → Pages**, select **Deploy from a branch**, choose the source branch and **/(root)**, then save
+GitHub Pages publishes the repository root on `codex/initial-site`. Push changes to that branch to publish an update.
 
-GitHub Pages runs Jekyll and publishes the generated HTML. Canonical links use the configured URL; navigation and assets use the configured base path. For a local preview of a repository-path site, append `--baseurl ''` to the preview command.
+GitHub Pages runs Jekyll and publishes the generated HTML. Canonical links use the URL in `_config.yml`; navigation and assets use its base path. The preview command overrides that path locally.
 
 A dedicated hostname isolates saved results from unrelated Pages projects on the same origin. Set it before people start saving history: browser storage does not move between origins.
 
