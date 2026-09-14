@@ -39,6 +39,7 @@ for (const [language, locale] of Object.entries(locales)) {
         assert.equal(result.label, id === 'who-5' ? (raw * 4 < 50 ? locale.ui.lowWellbeing : '') : form.bandLabels[band]);
         const copied = context.formatResult(id, answers, '2026-09-14');
         assert.ok(copied.includes(locale.ui.copyDisclaimer));
+        if (form.translationNotice) assert.ok(copied.includes(form.translationNotice));
         for (const item of form.items) assert.ok(copied.includes(item));
         assert.ok(!copied.includes('undefined'));
       }

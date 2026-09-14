@@ -1149,6 +1149,35 @@
       "file": "source-pdfs/who-5-ru.pdf",
       "status": "included",
       "sha256": "11852a93463c7b7d8d72ee5ac5f4f6b0234334d84924d8b49460ac644991b485"
+    },
+    {
+      "instrument": "gad-7",
+      "locale": "ja",
+      "variant": "Simple Questionnaires Japanese translation from the original English GAD-7, 2026-09-14",
+      "url": "https://aims.uw.edu/wordpress/wp-content/uploads/2023/06/GAD-7_English_0.pdf",
+      "file": "source-pdfs/gad-7-ja-source-english.pdf",
+      "status": "included",
+      "origin": "project-translation",
+      "sha256": "180538a8e3f2f3cb012f9991d1b307d3d14720e82bf0593f8853f4885740ce48",
+      "note": "Translated from the English form under its explicit translation permission, at user request. Not the validated Muramatsu J-GAD-7. No independent native-speaker review or psychometric validation. This limitation appears before the form and in copied results."
+    }
+  ],
+  "additionalSources": [
+    {
+      "instrument": "gad-7",
+      "locale": "ja",
+      "variant": "Japanese (2025), Kumiko Muramatsu",
+      "url": "https://jpsad.jp/other_work/research-2012/files/jpsad_gad7.pdf",
+      "publication": "https://jpsad.jp/manual.html",
+      "file": "source-pdfs/gad-7-ja.pdf",
+      "status": "permission-required",
+      "sha256": "e1991fdd06c3560f7dc1b7f9e2fe71fd913a2a948c086cf69a0c081692d2cf15",
+      "note": "Not listed in the imported PHQ Screeners catalogue. The 2025 PDF prohibits unauthorised reproduction, modification and electronic use. Not included in the website.",
+      "checked": "2026-09-14",
+      "researchReferences": [
+        "https://doi.org/10.3389/fpsyg.2018.01741",
+        "https://doi.org/10.18103/mra.v13i1.6247"
+      ]
     }
   ]
 }

@@ -68,6 +68,6 @@ The interface changes the layout, simplifies the introductory instruction and us
 
 ### Translations
 
-Translated PHQ-9 and GAD-7 wording comes from forms published by PHQ Screeners. WHO-5 wording comes from translations distributed by WHO, including older editions. Each translated page links to its selected source PDF.
+Translated PHQ-9 and GAD-7 wording comes from forms published by PHQ Screeners, except for Japanese GAD-7. That page uses our own translation from English, clearly marked as not validated in Japanese. WHO-5 wording comes from translations distributed by WHO, including older editions. Each translated page links to its selected source PDF.
 
 Interface text was translated separately with machine assistance and reviewed during implementation. It has not had independent native-speaker or clinical review. Source versions, adaptations and language availability are documented in [Translation sources](translations/README.md).

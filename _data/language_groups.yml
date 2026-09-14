@@ -1,0 +1,3 @@
+# Native-name order. Latin names first, then a stable visual order of other scripts.
+- ["af", "id", "ms", "ceb", "cs", "da", "de", "et", "en", "es", "fil", "fr", "hil", "hr", "is", "it", "sw", "ht", "lv", "lt", "hu", "nl", "no", "pl", "pt", "ro", "sq", "sk", "sl", "sr", "fi", "sv", "tr"]
+- ["ar", "fa", "ur", "he", "bg", "ru", "uk", "el", "as", "bn", "hi", "mr", "gu", "pa", "or", "kn", "ml", "ta", "te", "th", "zh", "zh-Hant", "ja", "ko"]

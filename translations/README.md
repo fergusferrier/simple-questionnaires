@@ -1,11 +1,11 @@
 # Translation sources
 
-The site includes English and 124 translated forms across 56 additional language and script codes. Availability varies by questionnaire. Each page contains translated questions, controls and result explanations.
+The site includes English and 125 translated forms across 56 additional language and script codes. Availability varies by questionnaire. Each page contains translated questions, controls and result explanations.
 
 | Questionnaire | Translated forms |
 | --- | ---: |
 | PHQ-9 | 51 |
-| GAD-7 | 43 |
+| GAD-7 | 44 |
 | WHO-5 | 30 |
 
 ## Available languages
@@ -41,7 +41,7 @@ Links below open the questionnaires on the website. A dash means this catalogue 
 | Bahasa Indonesia | `id` | [Open](https://fergusferrier.github.io/simple-questionnaires/id/phq-9.html) | [Open](https://fergusferrier.github.io/simple-questionnaires/id/gad-7.html) | — |
 | Íslenska | `is` | — | — | [Open](https://fergusferrier.github.io/simple-questionnaires/is/who-5.html) |
 | Italiano | `it` | [Open](https://fergusferrier.github.io/simple-questionnaires/it/phq-9.html) | [Open](https://fergusferrier.github.io/simple-questionnaires/it/gad-7.html) | [Open](https://fergusferrier.github.io/simple-questionnaires/it/who-5.html) |
-| 日本語 | `ja` | [Open](https://fergusferrier.github.io/simple-questionnaires/ja/phq-9.html) | — | [Open](https://fergusferrier.github.io/simple-questionnaires/ja/who-5.html) |
+| 日本語 | `ja` | [Open](https://fergusferrier.github.io/simple-questionnaires/ja/phq-9.html) | [Open](https://fergusferrier.github.io/simple-questionnaires/ja/gad-7.html) | [Open](https://fergusferrier.github.io/simple-questionnaires/ja/who-5.html) |
 | ಕನ್ನಡ | `kn` | [Open](https://fergusferrier.github.io/simple-questionnaires/kn/phq-9.html) | [Open](https://fergusferrier.github.io/simple-questionnaires/kn/gad-7.html) | — |
 | 한국어 | `ko` | [Open](https://fergusferrier.github.io/simple-questionnaires/ko/phq-9.html) | [Open](https://fergusferrier.github.io/simple-questionnaires/ko/gad-7.html) | — |
 | Lietuvių | `lt` | [Open](https://fergusferrier.github.io/simple-questionnaires/lt/phq-9.html) | [Open](https://fergusferrier.github.io/simple-questionnaires/lt/gad-7.html) | [Open](https://fergusferrier.github.io/simple-questionnaires/lt/who-5.html) |
@@ -80,7 +80,7 @@ The catalogue was checked on 14 September 2026.
 - [pfizer-variants.json](pfizer-variants.json) retains the full PHQ Screeners catalogue, including alternative country and community variants
 - `source-pdfs/` holds the downloaded originals locally. PDFs are excluded from Git and the published website
 
-The archive contains 124 PDFs. Restore or verify it from the repository root with Python 3 and curl:
+The archive contains 126 PDFs: 124 published translations, the English source for our Japanese GAD-7 translation, and one additional Japanese source with restricted reuse. Restore or verify it from the repository root with Python 3 and curl:
 
 ```sh
 python3 scripts/download-sources.py
@@ -88,9 +88,17 @@ python3 scripts/download-sources.py
 
 The script stops if a file's checksum changes, so a revised source cannot silently replace the version used for transcription.
 
+## Japanese GAD-7
+
+Japanese GAD-7 exists but was absent from the imported PHQ Screeners catalogue. The [Japanese Society of Anxiety and Related Disorders publishes the 2025 form](https://jpsad.jp/other_work/research-2012/files/jpsad_gad7.pdf). Its notice prohibits unauthorised reproduction, modification and electronic use. That version is archived under `additionalSources` with status `permission-required`, and its wording is not included in the website. The [society's guidance page](https://jpsad.jp/manual.html) provides the publisher's contact information.
+
+Our Japanese GAD-7 is a separate translation from the [English form](https://aims.uw.edu/wordpress/wp-content/uploads/2023/06/GAD-7_English_0.pdf), whose notice expressly permits translation. The seven symptom concepts, two-week recall period, response frequencies and score mapping were checked against English. The published Japanese form was consulted as a semantic comparison, not transcribed. This is not independent linguistic review or psychometric validation. The limitation appears before the questionnaire and in copied results.
+
+[Doi et al. (2018)](https://doi.org/10.3389/fpsyg.2018.01741) studied Muramatsu's translation. That research does not validate our wording. The article's open licence does not establish permission to reproduce a separate questionnaire it cites. The [2025 diagnostic study](https://doi.org/10.18103/mra.v13i1.6247) is retained as a further research reference, not a reproduction licence.
+
 ## Source choices and adaptations
 
-PHQ-9 and GAD-7 use forms from [PHQ Screeners](https://www.phqscreeners.com/). The [original distribution catalogue](https://www.phqscreeners.com/js/ul_to_dropdownvfinal.js) distinguishes country and community variants. This site selects one documented variant per language, with a separate `zh-Hant` route for Traditional Chinese. A language route does not imply validation in every country where that language is spoken.
+Except for our Japanese GAD-7 translation described above, PHQ-9 and GAD-7 use forms from [PHQ Screeners](https://www.phqscreeners.com/). The [original distribution catalogue](https://www.phqscreeners.com/js/ul_to_dropdownvfinal.js) distinguishes country and community variants. This site selects one documented variant per language, with a separate `zh-Hant` route for Traditional Chinese. A language route does not imply validation in every country where that language is spoken.
 
 WHO-5 uses translations distributed with the [WHO publication](https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01). Many forms date from 1998 or 1999, with other editions also represented. Their distribution alongside the 2024 publication does not make them newly translated or newly validated. WHO's accompanying notice says that these translations predate its acceptance of copyright and that the English edition is binding.
 

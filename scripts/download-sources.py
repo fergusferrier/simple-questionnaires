@@ -7,7 +7,8 @@ import subprocess
 import tempfile
 
 root = Path(__file__).resolve().parents[1] / 'translations'
-sources = json.loads((root / 'catalog.json').read_text())['sources']
+catalog = json.loads((root / 'catalog.json').read_text())
+sources = catalog['sources'] + catalog.get('additionalSources', [])
 for source in sources:
     target = root / source['file']
     expected = source['sha256']

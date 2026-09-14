@@ -2,6 +2,8 @@
 {% assign language = page.lang | default: 'en' %}
 {% assign locale = site.data.locales[language] %}
 {% assign t = locale.ui %}
+{% assign support_locale = site.data.support_locales[language] | default: '' %}
+{% assign support_url = 'https://findahelpline.com/' | append: support_locale %}
 {% assign q = site.data.questionnaires[page.questionnaire] %}
 {% assign text = locale.questionnaires[page.questionnaire] %}
 {% assign prefix = '' %}{% unless language == 'en' %}{% assign prefix = '/' | append: language %}{% endunless %}
@@ -65,6 +67,7 @@
       <div class="intro">
         <h1><bdi>{{ q.name }}</bdi><span>{{ text.title }}</span></h1>
         <p class="about">{{ text.about | escape }}</p>
+        {% if text.translationNotice %}<p class="about translation-notice">{{ text.translationNotice | escape }}</p>{% endif %}
       </div>
       <form id="questionnaire" autocomplete="off">
         <div class="instructions">{{ text.instruction | markdownify }}</div>
@@ -109,7 +112,7 @@
         <h2><span aria-hidden="true">⚠️</span> {{ t.supportTitle | escape }}</h2>
         <p>{{ t.supportText | escape }}</p>
         <div class="support-links">
-          <a class="button support-button" href="https://findahelpline.com/" rel="noreferrer">{{ t.supportCountry | escape }} <span aria-hidden="true">→</span></a>
+          <a class="button support-button" href="{{ support_url }}" rel="noreferrer">{{ t.supportCountry | escape }} <span aria-hidden="true">→</span></a>
         </div>
         <p class="result-note">{{ t.notMonitored | escape }}</p>
       </aside>
@@ -188,20 +191,23 @@
       </section>
       <details class="languages">
         <summary>{{ t.languages | escape }}</summary>
-        <ul>
-          {% for entry in site.data.locales %}
-          {% if entry[1].questionnaires[page.questionnaire] %}
-          {% assign target = '/' | append: entry[0] %}{% if entry[0] == 'en' %}{% assign target = '' %}{% endif %}
+        {% for group in site.data.language_groups %}
+        <ul class="language-group{% if forloop.first %} language-group-latin{% endif %}" dir="ltr">
+          {% for code in group %}
+          {% assign language_entry = site.data.locales[code] %}
+          {% if language_entry.questionnaires[page.questionnaire] %}
+          {% assign target = '/' | append: code %}{% if code == 'en' %}{% assign target = '' %}{% endif %}
           {% assign target = target | append: '/' | append: page.questionnaire | append: '.html' %}
-          <li><a href="{{ target | relative_url }}" lang="{{ entry[0] }}" hreflang="{{ entry[0] }}" data-language="{{ entry[0] }}" data-direction="{{ entry[1].dir }}" data-prompt="{{ entry[1].ui.suggestion | escape }}" data-visit="{{ entry[1].ui.visitLanguage | escape }}" data-dismiss="{{ entry[1].ui.dismiss | escape }}"{% if entry[0] == language %} aria-current="page"{% endif %}>{{ entry[1].name | escape }}</a></li>
+          <li><a href="{{ target | relative_url }}" lang="{{ code }}" dir="{{ language_entry.dir }}" hreflang="{{ code }}" data-language="{{ code }}" data-direction="{{ language_entry.dir }}" data-prompt="{{ language_entry.ui.suggestion | escape }}" data-visit="{{ language_entry.ui.visitLanguage | escape }}" data-dismiss="{{ language_entry.ui.dismiss | escape }}"{% if code == language %} aria-current="page"{% endif %}>{{ language_entry.name | escape }}</a></li>
           {% endif %}
           {% endfor %}
         </ul>
+        {% endfor %}
       </details>
     </div>
     <footer class="disclaimer-panel" aria-label="{{ t.aboutResults | escape }}">
       <p class="disclaimer"><span aria-hidden="true">⚠️</span> {{ t.disclaimer | escape }}</p>
-      <a class="button support-button" href="https://findahelpline.com/" rel="noreferrer">{{ t.findSupport | escape }} <span aria-hidden="true">→</span></a>
+      <a class="button support-button" href="{{ support_url }}" rel="noreferrer">{{ t.findSupport | escape }} <span aria-hidden="true">→</span></a>
     </footer>
   </main>
   <dialog id="delete-dialog" aria-labelledby="delete-title" aria-describedby="delete-description">

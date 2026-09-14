@@ -64,6 +64,7 @@ function formatResult(id, values, date) {
   const label = result.label ? ` — ${result.label}` : '';
   let text = `${q.name} — ${date}\n${t.timeframe}\n\n${items.join('\n\n')}\n\n${message('copyTotal', { score: result.score, max: q.max, label })}`;
   if (id === 'who-5') text += `\n${message('copyRaw', { raw: result.raw })}`;
+  if (q.translationNotice) text += `\n${q.translationNotice}`;
   text += `\n${t.copyDisclaimer}`;
   if (result.support) text += `\n${t.copySupport}`;
   return text;
