@@ -1,55 +1,37 @@
 # Simple Questionnaires
 
-PHQ-9, GAD-7 and WHO-5, with instant scores and optional history in your browser.
+**[Complete a questionnaire on the website](https://fergusferrier.github.io/simple-questionnaires/)**
 
-[Open Simple Questionnaires](https://fergusferrier.github.io/simple-questionnaires/) · [Report an issue](https://github.com/fergusferrier/simple-questionnaires/issues)
+Free questionnaires about depression symptoms, anxiety symptoms and well-being over the past two weeks. Answer the questions to see your score immediately. No account or download is needed.
 
-Jekyll renders all three pages from one HTML layout and one questionnaire data file. The published pages contain the full questions and native radio controls. Shared vanilla JavaScript handles scoring and history; one CSS file controls presentation.
-
-## Edit the site
-
-| File | Edit here |
+| Questionnaire | What it covers |
 | --- | --- |
-| `_layouts/questionnaire.html` | Shared page structure and interface text |
-| `_data/questionnaires.yml` | Questionnaire wording, answer options, scoring bands and sources |
-| `styles.css` | Shared styles and responsive layouts |
-| `app.js` | Scoring, saving and interaction logic |
-| `phq-9.html`, `gad-7.html`, `who-5.html` | Small page declarations selecting each questionnaire |
+| [PHQ-9](https://fergusferrier.github.io/simple-questionnaires/phq-9.html) | Depression symptoms |
+| [GAD-7](https://fergusferrier.github.io/simple-questionnaires/gad-7.html) | Anxiety symptoms |
+| [WHO-5](https://fergusferrier.github.io/simple-questionnaires/who-5.html) | Well-being |
 
-Jekyll writes generated files to `_site/`. Edit the source files above; generated files are replaced on the next build.
+The layout adapts to your screen, with clear text and controls you can use with a keyboard. You can copy or print a completed result, and choose to save results in your browser to look back on them later.
 
-## Preview locally
+## What your result means
 
-Install Ruby and Bundler, then install this project's dependencies once:
+⚠️ These questionnaires are screening tools for personal, informational use only. Your score cannot diagnose or rule out a mental health condition, or replace professional advice. If you are concerned about your mental health, seek advice regardless of your score.
 
-```sh
-bundle install
-```
+**[Find support in your country](https://findahelpline.com/)**. If you might harm yourself or cannot stay safe, contact your local emergency service now. This website is not monitored and cannot contact help for you.
 
-Start the preview:
+## Your privacy
 
-```sh
-bundle exec jekyll serve --host 127.0.0.1 --port 4173 --baseurl ''
-```
+Answers, results and scoring stay in your browser and are never sent to us. The website has no tracking scripts.
 
-Open [PHQ-9](http://127.0.0.1:4173/phq-9.html), [GAD-7](http://127.0.0.1:4173/gad-7.html) or [WHO-5](http://127.0.0.1:4173/who-5.html). Saving a source file rebuilds the site; refresh the browser to see the change.
+Saving is optional. If you turn it on, the browser remembers your choice and saves completed scores and dates, without the individual answers. History is not synced across browsers or devices. Someone using your browser profile can see it.
 
-To generate the static site without starting a server:
+**Delete all saved results** clears the history and turns saving off. Clearing browser data or ending a private browsing session can also erase saved results.
 
-```sh
-bundle exec jekyll build
-```
+## Sources
 
-## Publish on GitHub Pages
+Each questionnaire page links to its sources and scoring guidance. The [source and permissions notes](NOTICE.md) include academic references, credits and details of adaptations made for this website.
 
-GitHub Pages publishes the repository root on `codex/initial-site`. Push changes to that branch to publish an update.
+## Problems or suggestions
 
-GitHub Pages runs Jekyll and publishes the generated HTML. Canonical links use the URL in `_config.yml`; navigation and assets use its base path. The preview command overrides that path locally.
+[Report an issue or suggest an improvement](https://github.com/fergusferrier/simple-questionnaires/issues). GitHub issues are public, so please leave out personal answers, results and other private information. The issue tracker is for website feedback, not personal health advice or urgent support.
 
-A dedicated hostname isolates saved results from unrelated Pages projects on the same origin. Set it before people start saving history: browser storage does not move between origins.
-
-## Change questionnaire content
-
-Verify wording and scoring against the original source before changing an instrument. Check score boundaries and keyboard controls after changes. The matrix appears from 640px, joined rows from 481–639px, and joined vertical choices at 480px and below.
-
-These are screening instruments, not a diagnostic service. Source attribution and terms are in [NOTICE.md](NOTICE.md).
+This GitHub page holds the files used to make the website. If you want to change the code or run your own copy, see the [development guide](DEVELOPING.md).
