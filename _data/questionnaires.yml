@@ -1,8 +1,5 @@
----
 phq-9:
   name: PHQ-9
-  title: Depression questionnaire
-  fullName: Patient Health Questionnaire-9
   version: PHQ-9-English
   max: 27
   values:
@@ -10,58 +7,24 @@ phq-9:
   - 1
   - 2
   - 3
-  options:
-  - Not at all
-  - Several days
-  - More than half the days
-  - Nearly every day
-  instruction: >-
-    **Over the last 2 weeks**, how often have you been bothered by the
-    following problems?
-  items:
-  - Little interest or pleasure in doing things
-  - Feeling down, depressed, or hopeless
-  - Trouble falling or staying asleep, or sleeping too much
-  - Feeling tired or having little energy
-  - Poor appetite or overeating
-  - Feeling bad about yourself — or that you are a failure or have let yourself or
-    your family down
-  - Trouble concentrating on things, such as reading the newspaper or watching television
-  - Moving or speaking so slowly that other people could have noticed? Or the opposite
-    — being so fidgety or restless that you have been moving around a lot more than
-    usual
-  - Thoughts that you would be better off dead or of hurting yourself in some way
   bands:
   - - 0
     - 4
-    - Minimal
   - - 5
     - 9
-    - Mild
   - - 10
     - 14
-    - Moderate
   - - 15
     - 19
-    - Moderately severe
   - - 20
     - 27
-    - Severe
-  source: https://med.stanford.edu/content/dam/sm/ppc/documents/DBP/PHQ-9_bilingual.pdf
-  sourceLabel: English questionnaire PDF, hosted by Stanford
-  citation: >-
-    Kroenke K, Spitzer RL, Williams JBW.
-    [The PHQ-9: validity of a brief depression severity measure](https://doi.org/10.1046/j.1525-1497.2001.016009606.x).
-    *Journal of General Internal Medicine*. 2001;16(9):606–613.
   guidance: https://aims.uw.edu/resource/phq-9-depression-scale/
-  about: The PHQ-9 measures depressive symptoms over the past two weeks.
-  scoring: Higher scores indicate more symptoms.
-  scoreAdvice: A score
-    of **10 or more** is a reason to discuss the result with a qualified health professional.
+  count: 9
+  citation: 'Kroenke K, Spitzer RL, Williams JBW. [The PHQ-9: validity of a brief
+    depression severity measure](https://doi.org/10.1046/j.1525-1497.2001.016009606.x).
+    *Journal of General Internal Medicine*. 2001;16(9):606–613.'
 gad-7:
   name: GAD-7
-  title: Anxiety questionnaire
-  fullName: Generalized Anxiety Disorder-7
   version: GAD-7-English
   max: 21
   values:
@@ -69,50 +32,22 @@ gad-7:
   - 1
   - 2
   - 3
-  options:
-  - Not at all
-  - Several days
-  - More than half the days
-  - Nearly every day
-  instruction: >-
-    **Over the last 2 weeks**, how often have you been bothered by the following
-    problems?
-  items:
-  - Feeling nervous, anxious or on edge
-  - Not being able to stop or control worrying
-  - Worrying too much about different things
-  - Trouble relaxing
-  - Being so restless that it is hard to sit still
-  - Becoming easily annoyed or irritable
-  - Feeling afraid as if something awful might happen
   bands:
   - - 0
     - 4
-    - Minimal
   - - 5
     - 9
-    - Mild
   - - 10
     - 14
-    - Moderate
   - - 15
     - 21
-    - Severe
-  source: https://aims.uw.edu/wordpress/wp-content/uploads/2023/06/GAD-7_English_0.pdf
-  sourceLabel: English questionnaire PDF, hosted by the University of Washington
-  citation: >-
-    Spitzer RL, Kroenke K, Williams JBW, Löwe B.
-    [A brief measure for assessing generalized anxiety disorder: the GAD-7](https://doi.org/10.1001/archinte.166.10.1092).
-    *Archives of Internal Medicine*. 2006;166(10):1092–1097.
   guidance: https://www.aafp.org/afp/2015/0501/p617
-  about: The GAD-7 measures anxiety symptoms over the past two weeks.
-  scoring: Higher scores indicate more symptoms.
-  scoreAdvice: A score
-    of **10 or more** is a reason to discuss the result with a qualified health professional.
+  count: 7
+  citation: 'Spitzer RL, Kroenke K, Williams JBW, Löwe B. [A brief measure for assessing
+    generalized anxiety disorder: the GAD-7](https://doi.org/10.1001/archinte.166.10.1092).
+    *Archives of Internal Medicine*. 2006;166(10):1092–1097.'
 who-5:
   name: WHO-5
-  title: Well-being questionnaire
-  fullName: World Health Organization-Five Well-Being Index
   version: WHO-5-English-2024
   max: 100
   values:
@@ -122,26 +57,6 @@ who-5:
   - 2
   - 1
   - 0
-  options:
-  - All of the time
-  - Most of the time
-  - More than half of the time
-  - Less than half of the time
-  - Some of the time
-  - At no time
-  instruction: >-
-    **Over the last two weeks**, how often have these statements been true for you?
-  items:
-  - I have felt cheerful and in good spirits
-  - I have felt calm and relaxed
-  - I have felt active and vigorous
-  - I woke up feeling fresh and rested
-  - My daily life has been filled with things that interest me
   bands: []
-  source: https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01
-  sourceLabel: Original WHO publication
   guidance: https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01
-  about: The WHO-5 measures well-being over the past two weeks.
-  scoring: Higher scores indicate better well-being.
-  scoreAdvice: A score below **50** suggests poor well-being and is a reason to seek
-    further assessment.
+  count: 5

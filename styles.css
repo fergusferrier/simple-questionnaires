@@ -228,3 +228,17 @@ dialog .actions { justify-content: flex-end; }
   .choice, .choice-face { min-height: 25px; }
   .choice input:checked + .choice-face { background: #ddd !important; color: black !important; border: 2px solid black; }
 }
+
+/* Optional language suggestion and links, using the same controls as the form. */
+.language-suggestion { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-top: 20px; padding: 12px 16px; background: white; border: 1px solid var(--line); border-radius: 8px; }
+.language-suggestion .button { margin-inline-start: auto; }
+.languages { border-top: 1px solid var(--line); padding: 16px 0; font-size: 14px; }
+.languages summary { cursor: pointer; min-height: 44px; display: list-item; align-content: center; color: var(--blue); }
+.languages ul { display: flex; flex-wrap: wrap; list-style: none; gap: 8px 20px; padding: 0; margin: 8px 0; }
+.languages a { display: inline-block; padding: 8px 0; min-height: 44px; }
+.languages [aria-current=page] { font-weight: 700; }
+.question-table thead th, .choice-face { overflow-wrap: anywhere; hyphens: auto; }
+nav small { font-size: 11px; }
+[dir=rtl] .question-table tbody th, [dir=rtl] .history-table th { text-align: right; }
+[dir=rtl] h1 span { margin-left: 0; margin-right: 10px; }
+@media print { .language-suggestion { display: none !important; } }

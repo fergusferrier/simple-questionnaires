@@ -10,3 +10,6 @@ exclude:
   - vendor
   - README.md
   - DEVELOPING.md
+  - translations
+  - scripts
+  - tests

@@ -1,7 +1,32 @@
 ---
 ---
-// Jekyll supplies the same questionnaire data used to render the HTML.
-const questionnaires = {{ site.data.questionnaires | jsonify }};
+// Numeric definitions are shared by every language. Text arrives in locale.js.
+const definitions = {{ site.data.questionnaires | jsonify }};
+const locale = window.questionnaireLocale;
+const t = locale.ui;
+const questionnaires = Object.fromEntries(Object.entries(definitions).map(([id, definition]) => {
+  const text = locale.questionnaires[id];
+  return [id, { ...definition, ...text, bands: definition.bands.map(([min, max], index) => [min, max, text?.bandLabels[index] || '']) }];
+}));
+function message(key, values = {}) {
+  return t[key].replace(/\{(\w+)\}/g, (_, name) => values[name] ?? `{${name}}`);
+}
+function preferredLanguage(preferences, available) {
+  for (const preference of preferences) {
+    const normalized = preference.toLowerCase();
+    const exact = available.find(code => code.toLowerCase() === normalized);
+    if (exact) return exact;
+    const base = normalized.split('-')[0];
+    if (base === 'zh') {
+      const traditional = /(?:hant|tw|hk|mo)/i.test(normalized);
+      const chinese = available.find(code => code === (traditional ? 'zh-Hant' : 'zh'));
+      if (chinese) return chinese;
+    }
+    const match = available.find(code => code.toLowerCase() === base);
+    if (match) return match;
+  }
+  return null;
+}
 
 function scoreAnswers(id, answers) {
   const q = questionnaires[id];
@@ -10,16 +35,19 @@ function scoreAnswers(id, answers) {
   if (answers.some(x => x === null)) return null;
   const raw = answers.reduce((sum, value) => sum + value, 0);
   const score = id === 'who-5' ? raw * 4 : raw;
-  return { score, raw, label: id === 'who-5' ? (score < 50 ? 'Low well-being' : '') : q.bands.find(([min, max]) => score >= min && score <= max)[2], support: id === 'phq-9' && answers[8] > 0 };
+  return { score, raw, label: id === 'who-5' ? (score < 50 ? t.lowWellbeing : '') : q.bands.find(([min, max]) => score >= min && score <= max)[2], support: id === 'phq-9' && answers[8] > 0 };
 }
 function validateHistory(input) {
   if (!input || input.version !== 1 || typeof input.saving !== 'boolean' || !Array.isArray(input.results) || input.results.length > 10000) throw new Error('Saved history has an unsupported format.');
   const ids = new Set();
   const results = input.results.map(row => {
-    const q = row && Object.hasOwn(questionnaires, row.instrument) ? questionnaires[row.instrument] : null;
+    const q = row && Object.hasOwn(questionnaires, row.instrument) ? definitions[row.instrument] : null;
     if (!q || typeof row.id !== 'string' || !/^[a-zA-Z0-9-]{1,80}$/.test(row.id) || ids.has(row.id) || row.version !== q.version || !Number.isInteger(row.score) || row.score < 0 || row.score > q.max || (row.instrument === 'who-5' && row.score % 4 !== 0) || typeof row.date !== 'string' || !/^\d{4}-\d{2}-\d{2}T/.test(row.date) || Number.isNaN(Date.parse(row.date))) throw new Error('The history contains an invalid or duplicate result.');
     ids.add(row.id);
-    return { id: row.id, instrument: row.instrument, version: row.version, date: new Date(row.date).toISOString(), score: row.score };
+    const language = row.locale || 'en';
+    if (typeof language !== 'string' || !/^[a-z]{2,3}(?:-[a-zA-Z0-9]{2,8})*$/.test(language)) throw new Error('Invalid saved language.');
+    if (row.translationVersion !== undefined && (typeof row.translationVersion !== 'string' || row.translationVersion.length > 80)) throw new Error('Invalid translation version.');
+    return { id: row.id, instrument: row.instrument, version: row.version, date: new Date(row.date).toISOString(), score: row.score, locale: language, ...(row.translationVersion ? { translationVersion: row.translationVersion } : {}) };
   });
   return { version: 1, saving: input.saving, results };
 }
@@ -30,12 +58,13 @@ function formatResult(id, values, date) {
   const items = q.items.map((question, index) => {
     const points = values[index];
     const answer = q.options[q.values.indexOf(points)];
-    return `${index + 1}. ${question}\n${answer} (${points} ${points === 1 ? 'pt' : 'pts'})`;
+    return `${index + 1}. ${question}\n${answer} (${points} ${points === 1 ? t.point : t.points})`;
   });
-  let text = `${q.name} — ${date}\nTimeframe: past two weeks.\n\n${items.join('\n\n')}\n\nTotal: ${result.score}/${q.max}${result.label ? ` — ${result.label}` : ''}`;
-  if (id === 'who-5') text += `\nRaw total: ${result.raw}/25, multiplied by 4.`;
-  text += '\nScreening result, not a diagnosis.';
-  if (result.support) text += '\nQuestion 9 was positive. Discuss this with a health professional promptly, regardless of the total score.';
+  const label = result.label ? ` — ${result.label}` : '';
+  let text = `${q.name} — ${date}\n${t.timeframe}\n\n${items.join('\n\n')}\n\n${message('copyTotal', { score: result.score, max: q.max, label })}`;
+  if (id === 'who-5') text += `\n${message('copyRaw', { raw: result.raw })}`;
+  text += `\n${t.copyDisclaimer}`;
+  if (result.support) text += `\n${t.copySupport}`;
   return text;
 }
 
@@ -56,7 +85,7 @@ function formatResult(id, values, date) {
   let storageIssue = false;
   let pendingDelete = null;
   const noticeTimers = new Map();
-  const dateFormat = new Intl.DateTimeFormat(undefined, { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+  const dateFormat = new Intl.DateTimeFormat(locale.code, { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
 
   function error(message) {
     $('storage-error').hidden = !message;
@@ -79,7 +108,7 @@ function formatResult(id, values, date) {
       return true;
     } catch {
       storageIssue = true;
-      error('Browser history could not be read. Your score still works, but results will not be saved. Existing data has not been overwritten. You can reset this site’s data in your browser settings.');
+      error(t.readError);
       return false;
     }
   }
@@ -92,7 +121,7 @@ function formatResult(id, values, date) {
       error('');
       return true;
     } catch {
-      error('This result could not be saved. Browser storage may be blocked or full. You can still copy your result.');
+      error(t.writeError);
       return false;
     }
   }
@@ -103,10 +132,10 @@ function formatResult(id, values, date) {
   function persistCurrent() {
     if (!current || suppressSave || !readState() || !state.saving) return;
     const existing = state.results.find(row => row.id === attempt);
-    const row = { id: attempt, instrument, version: q.version, date: completedAt, score: current.score };
+    const row = { id: attempt, instrument, version: q.version, locale: locale.code, translationVersion: q.translationVersion, date: completedAt, score: current.score };
     const results = existing ? state.results.map(item => item.id === attempt ? row : item) : [...state.results, row];
-    if (writeState({ ...state, results })) showResultNotice('✓ Result saved on this device.');
-    else showResultNotice('Not saved. See the browser storage message below.', false);
+    if (writeState({ ...state, results })) showResultNotice(t.saved);
+    else showResultNotice(t.notSaved, false);
   }
   function renderResult(shouldSave = true) {
     const values = answers();
@@ -114,8 +143,8 @@ function formatResult(id, values, date) {
     $('copy-fallback').hidden = true;
     $('copy-text').value = '';
     $('result-announcement').textContent = current
-      ? `Result: ${current.score} out of ${q.max}${current.label ? `, ${current.label}` : ''}.`
-      : 'Answer all questions to see your result.';
+      ? message('announcement', { score: current.score, max: q.max, label: current.label ? `, ${current.label}` : '' })
+      : t.incomplete;
     $('result-prompt').hidden = !!current;
     $('result-score').hidden = !current;
     $('result-details').hidden = !current;
@@ -152,14 +181,15 @@ function formatResult(id, values, date) {
     for (const row of rows) {
       const tr = document.createElement('tr');
       const definition = questionnaires[row.instrument];
-      const label = row.instrument === 'who-5' ? (row.score < 50 ? 'Low well-being' : '—') : definition.bands.find(([min, max]) => row.score >= min && row.score <= max)[2];
+      const bandKeys = row.instrument === 'phq-9' ? ['bandMinimal', 'bandMild', 'bandModerate', 'bandModeratelySevere', 'bandSevere'] : ['bandMinimal', 'bandMild', 'bandModerate', 'bandSevere'];
+      const label = row.instrument === 'who-5' ? (row.score < 50 ? t.lowWellbeing : '—') : t[bandKeys[definition.bands.findIndex(([min, max]) => row.score >= min && row.score <= max)]];
       for (const value of [dateFormat.format(new Date(row.date)), definition.name, `${row.score} / ${definition.max}`, label]) {
         const td = document.createElement('td'); td.textContent = value; tr.append(td);
       }
       const td = document.createElement('td');
       const button = document.createElement('button');
-      button.className = 'row-delete'; button.type = 'button'; button.textContent = 'Delete';
-      button.setAttribute('aria-label', `Delete ${definition.name} result from ${dateFormat.format(new Date(row.date))}`);
+      button.className = 'row-delete'; button.type = 'button'; button.textContent = t.delete;
+      button.setAttribute('aria-label', message('deleteRow', { name: definition.name, date: dateFormat.format(new Date(row.date)) }));
       button.addEventListener('click', () => confirmDeletion(row.id));
       td.append(button); tr.append(td); body.append(tr);
     }
@@ -178,11 +208,11 @@ function formatResult(id, values, date) {
   }
   function confirmDeletion(id) {
     pendingDelete = id;
-    $('delete-title').textContent = id === 'all' ? 'Delete all saved results?' : 'Delete this result?';
+    $('delete-title').textContent = id === 'all' ? t.deleteAllTitle : t.deleteOneTitle;
     $('delete-description').textContent = id === 'all'
-      ? 'This removes the history for all three questionnaires from this browser and switches automatic saving off. This cannot be undone.'
-      : 'This removes this result from your browser history. This cannot be undone.';
-    $('confirm-delete').textContent = id === 'all' ? 'Delete everything' : 'Delete result';
+      ? t.deleteAllDescription
+      : t.deleteOneDescription;
+    $('confirm-delete').textContent = id === 'all' ? t.deleteEverything : t.deleteResult;
     $('delete-dialog').showModal();
     $('cancel-delete').focus();
   }
@@ -192,12 +222,12 @@ function formatResult(id, values, date) {
         localStorage.removeItem(key);
         state = emptyState(); storageIssue = false; suppressSave = true; error('');
         showResultNotice('');
-        showNotice('history-status', 'Saved results deleted. Automatic saving is off.');
-      } catch { error('The browser could not delete saved data. Try clearing this site’s data in your browser settings.'); }
+        showNotice('history-status', t.deletedAll);
+      } catch { error(t.deleteError); }
     } else if (pendingDelete && readState()) {
       if (writeState({ ...state, results: state.results.filter(row => row.id !== pendingDelete) })) {
         if (pendingDelete === attempt) { suppressSave = true; showResultNotice(''); }
-        showNotice('history-status', 'Result deleted.');
+        showNotice('history-status', t.deletedOne);
       }
     }
     pendingDelete = null;
@@ -209,7 +239,7 @@ function formatResult(id, values, date) {
     return formatResult(instrument, answers(), dateFormat.format(new Date(completedAt)));
   }
   form.addEventListener('submit', event => event.preventDefault());
-  form.addEventListener('change', () => renderResult());
+  form.addEventListener('change', () => { $('language-suggestion').hidden = true; renderResult(); });
   $('saving-toggle').addEventListener('change', event => setSaving(event.target.checked));
   $('save-result').addEventListener('click', () => {
     setSaving(true);
@@ -223,7 +253,7 @@ function formatResult(id, values, date) {
   });
   $('copy-result').addEventListener('click', async () => {
     if (!current) return;
-    try { await navigator.clipboard.writeText(resultText()); showResultNotice('✓ Result copied.'); }
+    try { await navigator.clipboard.writeText(resultText()); showResultNotice(t.copied); }
     catch { $('copy-fallback').hidden = false; $('copy-text').value = resultText(); $('copy-text').focus(); $('copy-text').select(); }
   });
   $('delete-all').addEventListener('click', () => confirmDeletion('all'));
@@ -236,5 +266,24 @@ function formatResult(id, values, date) {
     }
   });
   form.reset(); readState(); renderResult(false);
+  const languageLinks = [...document.querySelectorAll('[data-language]')];
+  const language = preferredLanguage(navigator.languages || [navigator.language], languageLinks.map(link => link.dataset.language));
+  let dismissed = false;
+  try { dismissed = sessionStorage.getItem('simple-questionnaires.language-dismissed') === '1'; } catch { /* Suggestions also work when storage is unavailable. */ }
+  if (!dismissed && language && language !== locale.code) {
+    const link = languageLinks.find(item => item.dataset.language === language);
+    $('language-suggestion-text').textContent = link.dataset.prompt;
+    $('language-suggestion-link').textContent = link.dataset.visit;
+    $('language-suggestion-link').href = link.href;
+    $('dismiss-language').textContent = link.dataset.dismiss;
+    $('language-suggestion').lang = language;
+    $('language-suggestion').dir = link.dataset.direction;
+    $('language-suggestion').hidden = false;
+  }
+  $('dismiss-language').addEventListener('click', () => {
+    $('language-suggestion').hidden = true;
+    try { sessionStorage.setItem('simple-questionnaires.language-dismissed', '1'); } catch { /* Dismissal still applies to this page. */ }
+    form.querySelector('input').focus();
+  });
 
 })();

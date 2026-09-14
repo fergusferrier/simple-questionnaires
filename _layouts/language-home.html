@@ -1,0 +1,14 @@
+{% assign locale = site.data.locales[page.lang] %}
+{% assign first = locale.questionnaires | first %}
+<!doctype html>
+<html lang="{{ page.lang }}" dir="{{ locale.dir }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0;url={{ first[0] }}.html">
+  <title>{{ site.title }}</title>
+</head>
+<body>
+  {% for entry in locale.questionnaires %}<a href="{{ entry[0] }}.html">{{ entry[0] | upcase }}</a>{% endfor %}
+</body>
+</html>
