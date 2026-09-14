@@ -36,6 +36,4 @@ An explicit saving choice persists in `simple-questionnaires.history.v1` in loca
 
 History is shared across the three routes on the same origin. Deleting all saved results removes this storage key and disables automatic saving. The code never clears unrelated localStorage keys.
 
-The optional browser WebMCP tool fills the current questionnaire and uses the same scoring and saving rules as the form. Browsers without WebMCP support use the ordinary controls.
-
 GitHub Pages logs visitor IP addresses for security. This is separate from questionnaire responses. External source and support links navigate to other sites only when selected.

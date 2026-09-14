@@ -237,24 +237,4 @@ function formatResult(id, values, date) {
   });
   form.reset(); readState(); renderResult(false);
 
-  // Optional WebMCP interface. Unsupported browsers use the same ordinary form.
-  const context = document.modelContext;
-  if (context?.registerTool) {
-    const lifecycle = new AbortController();
-    try {
-      Promise.resolve(context.registerTool({
-        name: 'answer_questionnaire', title: `Answer ${q.name}`,
-        description: `Set all ${q.name} answers and show the result. Saves the total in this browser only if the user has already enabled automatic saving.`,
-        inputSchema: { type: 'object', properties: { answers: { type: 'array', items: { type: 'integer', enum: q.values }, minItems: q.items.length, maxItems: q.items.length } }, required: ['answers'], additionalProperties: false },
-        annotations: { readOnlyHint: false, untrustedContentHint: false },
-        execute(input) {
-          if (!input || Object.keys(input).length !== 1 || !Array.isArray(input.answers) || input.answers.some(value => value === null)) throw new Error('Provide a complete numeric answer array.');
-          scoreAnswers(instrument, input.answers);
-          input.answers.forEach((value, i) => { form.querySelector(`input[name="q${i}"][value="${value}"]`).checked = true; });
-          renderResult(); return { instrument, score: current.score, max: q.max, interpretation: current.label };
-        }
-      }, { signal: lifecycle.signal })).catch(() => {});
-      window.addEventListener('pagehide', event => { if (!event.persisted) lifecycle.abort(); });
-    } catch { /* The visible questionnaire works without the optional API. */ }
-  }
 })();
