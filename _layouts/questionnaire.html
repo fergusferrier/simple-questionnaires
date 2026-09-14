@@ -148,6 +148,10 @@
     </div>
 
     <div class="details-stack">
+      <section aria-labelledby="design-title">
+        <h2 id="design-title">About this site</h2>
+        <p>Designed to be easy to read and use, with a simple layout that adapts to your screen and controls you can use with a keyboard.</p>
+      </section>
       <section aria-labelledby="sources-title">
         <h2 id="sources-title">Sources</h2>
         <p><a href="{{ q.source }}" rel="noreferrer">{{ q.sourceLabel | escape }}</a>{% unless q.source == q.guidance %} · <a href="{{ q.guidance }}" rel="noreferrer">Scoring guidance</a>{% endunless %}{% unless page.questionnaire == 'who-5' %} · <a href="https://www.phqscreeners.com/" rel="noreferrer">PHQ Screeners</a>{% endunless %}</p>
